@@ -1,6 +1,6 @@
 {{ config(
     materialized='table',
-    tags=['cost_models']
+    tags=['all_models']
 ) }}
 
 WITH order_details AS (

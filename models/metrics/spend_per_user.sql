@@ -1,6 +1,6 @@
 {{ config(
     materialized='table',
-    tags=['spend_models']
+    tags=['all_models']
 ) }}
 
 WITH user_spends AS (

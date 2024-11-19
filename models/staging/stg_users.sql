@@ -1,6 +1,6 @@
 {{ config(
     materialized='view',
-    tags=['user_models']
+    tags=['all_models']
 ) }}
 
 SELECT

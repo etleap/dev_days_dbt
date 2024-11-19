@@ -1,29 +1,40 @@
-# Name of the project (use lowercase and underscores)
-name: 'dev_days_dbt'
-version: '1.0.0'
 
-# Profile to use for this project, ensure it matches the profile defined in profiles.yml
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dev_days_dbt'
+version: '1.1.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
 profile: 'dev_days_dbt'
 
-# Path configurations for where dbt looks for different types of files
-model-paths: ["models"]  # models directory for your SQL models
-analysis-paths: ["analyses"]  # analysis files (optional)
-test-paths: ["tests"]  # test files
-seed-paths: ["seeds"]  # seed files (optional)
-macro-paths: ["macros"]  # macros for reusable logic
-snapshot-paths: ["snapshots"]  # snapshot files (optional)
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 
-# Clean targets are directories to be cleaned by dbt clean
-clean-targets:
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-# Model configurations: Apply different settings for specific directories or models
 
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/ directory
+# as tables. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
 models:
-  dev_days_dbt:
+  dbt_order_costs:
     # Define configuration for different directories under models/
-    
+    +tags: all_models
     # For staging models (should be materialized as views for cleaning and transformation)
     staging:
       +materialized: view
