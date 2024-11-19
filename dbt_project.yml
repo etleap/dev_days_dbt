@@ -1,9 +1,9 @@
 # Name of the project (use lowercase and underscores)
-name: 'dbt_order_costs'
+name: 'dev_days_dbt'
 version: '1.0.0'
 
 # Profile to use for this project, ensure it matches the profile defined in profiles.yml
-profile: 'dbt_order_costs'
+profile: 'dev_days_dbt'
 
 # Path configurations for where dbt looks for different types of files
 model-paths: ["models"]  # models directory for your SQL models
@@ -21,7 +21,7 @@ clean-targets:
 # Model configurations: Apply different settings for specific directories or models
 
 models:
-  dbt_order_costs:
+  dev_days_dbt:
     # Define configuration for different directories under models/
     
     # For staging models (should be materialized as views for cleaning and transformation)
