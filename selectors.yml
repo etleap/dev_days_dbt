@@ -3,7 +3,6 @@ selectors:
     definition:
       tag: all_models
 
-
-
-
-      
+  - name: costs_model
+    definition:
+      tag: costs_model
