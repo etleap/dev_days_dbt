@@ -1,6 +1,6 @@
 Welcome to your new dbt project!
 
-### Structure of this project
+### Structure of this project  
 ![DAG](dag.png)
 (Green represents sources, blue - models)
 
