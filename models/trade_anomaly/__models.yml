@@ -1,7 +1,0 @@
-
-version: 2
-
-models:
-  - name: fct_anomaly_context
-  - name: int_symbol_order_5min
-  - name: int_watchlist_anomaly
