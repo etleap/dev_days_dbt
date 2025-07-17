@@ -1,1 +1,0 @@
-SELECT * from {{ ref('logins_by_user') }}
