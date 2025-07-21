@@ -5,7 +5,7 @@ select
   watchlist_anomaly.account_name,
   watchlist_anomaly.anomaly_create_date,
   watchlist_anomaly.watch_reason,
-  watchlist_anomaly.watchlist_date,
+  watchlist_anomaly.watchlist_date, 
   watchlist_anomaly.anomaly_reason,
   watchlist_anomaly.anomaly_severity
 from {{ ref('int_symbol_order_5min') }} symbol_order
