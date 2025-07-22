@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: PUBLIC
+    database: ETLEAP_DEV
     tables:
       - name: ORDERS
       - name: SALESFORCE_ACCOUNT
