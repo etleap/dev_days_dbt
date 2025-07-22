@@ -14,4 +14,4 @@ left join {{ ref('int_watchlist_anomaly') }} watchlist_anomaly
   and symbol_order.symbol = watchlist_anomaly.symbol
   and watchlist_anomaly.anomaly_create_date > dateadd(minute, -5, current_timestamp())
   
--- test
+-- test2
