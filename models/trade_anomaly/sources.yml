@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: PUBLIC
-    database: ETLEAP_DEV
+    database: SNOWFLAKE_2025
     tables:
       - name: ORDERS
       - name: SALESFORCE_ACCOUNT
