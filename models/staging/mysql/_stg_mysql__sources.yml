@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: DBTDEMO
-    tables:
-      - name: ITEM
-      - name: LINE_ITEM
-      - name: PURCHASE
-      - name: USER_INFO
