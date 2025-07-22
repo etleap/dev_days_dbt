@@ -1,10 +1,3 @@
-{{ config(
-    pre_hook=[
-        "ALTER ICEBERG TABLE PUBLIC.\"ORDERS_KqRs6Yo0\" REFRESH",
-        "set MIN_DATE = dateadd(minute, -5, current_timestamp())"
-    ]
-) }}
-
 select
   account_id,
   symbol,
