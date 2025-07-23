@@ -1,1 +1,1 @@
-SELECT * FROM  {{ source('ETLEAP_TEST', 'test') }}
+SELECT 1 as id;
