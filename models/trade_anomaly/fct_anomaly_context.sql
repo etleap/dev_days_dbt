@@ -1,15 +1,21 @@
+{{ config(
+    pre_hook=[
+        "ALTER ICEBERG TABLE PUBLIC.\"ORDERS_KqRs6Yo0\" REFRESH",
+        "set MIN_DATE = dateadd(minute, -5, current_timestamp())"
+    ]
+) }}
+
 select
-  symbol_order.account_id,
-  symbol_order.symbol,
-  symbol_order.pnl_risk_usd as open_exposure_usd,
-  watchlist_anomaly.account_name,
-  watchlist_anomaly.anomaly_create_date,
-  watchlist_anomaly.watch_reason,
-  watchlist_anomaly.watchlist_date,
-  watchlist_anomaly.anomaly_reason,
-  watchlist_anomaly.anomaly_severity
-from {{ ref('int_symbol_order_5min') }} symbol_order
-left join {{ ref('int_watchlist_anomaly') }} watchlist_anomaly
-  on symbol_order.account_id = watchlist_anomaly.account_id
-  and symbol_order.symbol = watchlist_anomaly.symbol
-  and watchlist_anomaly.anomaly_create_date > dateadd(minute, -5, current_timestamp())
+  account_id,
+  symbol,
+  sum(qty)                                   as shares_submitted_10m,
+  sum(filled_qty)                            as shares_filled_10m,
+  count_if(status = 'CANCELED')              as cancels_10m,
+  sum(
+    case when status = 'OPEN' 
+      then pnl_usd 
+      else 0 
+    end) as pnl_risk_usd,
+  max(updated_at)                            as last_update
+from {{ source('PUBLIC', 'ORDERS') }}
+group by account_id, symbol
