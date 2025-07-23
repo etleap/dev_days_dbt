@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('ARCHIE', 'table with "SPACE') }}

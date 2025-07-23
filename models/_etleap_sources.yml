@@ -1,5 +1,9 @@
 version: 2
 sources:
+  - name: ARCHIE
+    database: etleap_dev
+    tables:
+      - name: table with "SPACE
   - name: DBTDEMO
     database: etleap_dev
     tables:
