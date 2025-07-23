@@ -1,4 +1,7 @@
-SELECT u.id AS user_id, COUNT(e.external_id) AS logins 
-FROM {{source('DBTDEMO', 'USER_INFO')}} u, {{source('DBTDEMO', 'WEB_EVENTS')}} e
-WHERE u.external_id = e.external_id
-GROUP BY u.id
+{{ config(materialized='view') }}
+
+SELECT s.user_id, SUM(s.spend)/SUM(l.logins) AS spend_by_login 
+FROM {{ref('spend_per_user')}} s
+  INNER JOIN {{ref('logins_by_user')}} l ON l.user_id = s.user_id
+GROUP BY s.user_id
+ORDER BY spend_by_login desc
