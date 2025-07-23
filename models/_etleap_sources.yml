@@ -4,7 +4,8 @@ sources:
     database: etleap_dev
     tables:
       - name: 'table with ""SPACE'
-        identifier: 'table with \"\"SPACE'
+        quoting:
+          identifier: true
   - name: DBTDEMO
     database: etleap_dev
     tables:
