@@ -3,7 +3,9 @@ sources:
   - name: ARCHIE
     database: etleap_dev
     tables:
-      - name: table with "SPACE
+      - name: 'table with ""SPACE'
+        quoting:
+          identifier: true
   - name: DBTDEMO
     database: etleap_dev
     tables:
