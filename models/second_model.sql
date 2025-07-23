@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('my_model') }}
+SELECT * FROM  {{ source('ETLEAP_TEST', 'test') }}
