@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('DBTDEMO', 'ITEM') }}
+SELECT * FROM {{ source('DBTDEMO', 'ITEM') }},
