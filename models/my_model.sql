@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('ARCHIE', 'table with "SPACE') }}
+SELECT * FROM {{ source('ARCHIE', 'table with ""SPACE') }}
