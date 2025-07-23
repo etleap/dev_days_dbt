@@ -1,1 +1,1 @@
-SELECT 1 as id FROM {{ ref('my_model') }};
+SELECT 1 as id FROM {{ ref('my_model') }}
