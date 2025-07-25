@@ -3,7 +3,7 @@ sources:
   - name: ARCHIE
     database: etleap_dev
     tables:
-      - name: table with "SPACE
+      - name: table with "SPACE2
   - name: DBTDEMO
     database: etleap_dev
     tables:
