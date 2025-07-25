@@ -1,0 +1,1 @@
+select * from {{ source('ETLEAP_TEST', 'sc_multi_col_pk_with_ts') }}
