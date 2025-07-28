@@ -6,7 +6,7 @@
 
 select
   account.zenith_account_id__c as account_id,
-  account.name as account_name,
+  account.name as account_name, 
   anomaly.symbol__c as symbol,
   anomaly.severity__c as anomaly_severity,
   anomaly.reason__c as anomaly_reason,

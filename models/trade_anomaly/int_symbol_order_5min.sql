@@ -6,7 +6,7 @@
 ) }}
 
 select
-  account_id,
+  account_id, 
   symbol,
   sum(qty)                                   as shares_submitted_10m,
   sum(filled_qty)                            as shares_filled_10m,
