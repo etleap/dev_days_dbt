@@ -66,6 +66,7 @@ sources:
       - name: glt_erpx_validation_um
       - name: glt_replace_mode
       - name: MARIADB_DMS_TEST
+      - name: microsoft_lists_mock_users
       - name: MK_SFTP_TEST_2ND_FOLDER
       - name: ne_inventory
       - name: ne_multi_col_pk
