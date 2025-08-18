@@ -10,5 +10,3 @@ select
 from {{ source('PUBLIC', 'TRADE_ANOMALY') }} anomaly
 join {{ source('PUBLIC', 'SALESFORCE_ACCOUNT' )}} account
   on anomaly.account__c = account.id
-join {{ source('PUBLIC', 'WATCHLIST') }} watchlist
-  on watchlist.entity_name = account.name
