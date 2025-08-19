@@ -8,5 +8,3 @@ select
   watchlist.watchlist_date,
   watchlist.watch_reason
 from {{ source('PUBLIC', 'TRADE_ANOMALY') }} anomaly
-join {{ source('PUBLIC', 'SALESFORCE_ACCOUNT' )}} account
-  on anomaly.account__c = account.id
