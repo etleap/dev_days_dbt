@@ -8,8 +8,7 @@ select
   account.name as account_name,
   anomaly.symbol__c as symbol,
   anomaly.severity__c as anomaly_severity,
-  anomaly.reason__c as anomaly_reason,
-  anomaly.created_date as anomaly_create_date,
+
   watchlist.watchlist_date,
   watchlist.watch_reason
 from {{ source('PUBLIC', 'TRADE_ANOMALY') }} anomaly
