@@ -19,4 +19,3 @@ select
   max(updated_at)                            as last_update
 from {{ source('PUBLIC', 'ORDERS') }}
 group by account_id, symbol
-
