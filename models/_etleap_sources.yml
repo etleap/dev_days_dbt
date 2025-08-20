@@ -4,6 +4,10 @@ sources:
     database: etleap_dev
     tables:
       - name: my"t`able
+  - name: DBT_DEMO
+    database: etleap_dev
+    tables:
+      - name: PROD_ETLEAP_SCHEMAS____SHEET1
   - name: DBTDEMO
     database: etleap_dev
     tables:
