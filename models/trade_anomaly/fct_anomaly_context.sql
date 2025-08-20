@@ -1,5 +1,5 @@
 select
-  symbol_order.another_field_3,
+  symbol_order.another_field_4,
   symbol_order.account_id,
   symbol_order.symbol,
   symbol_order.pnl_risk_usd as open_exposure_usd,
