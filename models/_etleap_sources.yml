@@ -63,6 +63,7 @@ sources:
       - name: PR_TEST_SCHEMA___MULTI_COL_PK
       - name: restest_DEMO___INVENTORY
       - name: restest_DEMO___PERSON
+      - name: RL_WEB_EVENTS
       - name: SA_TEST_SCHEMA___BIT_PK
       - name: SA_TEST_SCHEMA___INVENTORY
       - name: SA_TEST_SCHEMA___MULTI_COL_PK
@@ -110,10 +111,12 @@ sources:
       - name: Web_Events_PER
       - name: Web_Events_PG
       - name: WEB_EVENTS_PL
+      - name: WEB_EVENTS_PM
       - name: WEB_EVENTS_RE
       - name: WEB_EVENTS_RO
       - name: WEB_EVENTS_RV
       - name: Web_Events_SIG
+      - name: WEB_EVENTS_SIL
       - name: Web_Events_SNOw
       - name: Web_Events_TEST
       - name: Web_Events_timo
