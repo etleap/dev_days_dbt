@@ -1,5 +1,12 @@
 version: 2
 sources:
+  - name: DBT_DEMO
+    database: etleap_dev
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: LUQMAN_S&ACCOUNT
   - name: DBTDEMO
     database: etleap_dev
     quoting:
