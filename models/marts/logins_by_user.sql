@@ -4,3 +4,5 @@ WHERE u.external_id = e.external_id
 GROUP BY u.id
 
 -- some comment
+-- more stuff
+
