@@ -1,0 +1,138 @@
+version: 2
+sources:
+  - name: eu
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: activity_record
+      - name: activity_record_old
+      - name: organization
+      - name: pipeline
+      - name: user
+  - name: jblessing
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: connection_date
+      - name: connection_name_v2
+      - name: dashboard_jdbc_connection
+      - name: dashboard_pipeline
+      - name: dashboard_users
+      - name: db_view_model
+      - name: dbt_model
+      - name: destination_type_mapping
+      - name: destination_v2
+      - name: destinationType_mapping
+      - name: etleap_user
+      - name: export_v2
+      - name: hscompanies
+      - name: hsContacts
+      - name: hsdeals
+      - name: hubspot_customers
+      - name: jdbc_connection date
+      - name: jdbc_connection_v2
+      - name: lendinghome_action_date
+      - name: lqdigital_action_date
+      - name: mixpanel.raw_data
+      - name: model_web_events
+      - name: monthly_mrr
+      - name: nextbike_action_date
+      - name: organization
+      - name: Other Customer Metrics
+      - name: pagerduty_action_date
+      - name: pathstream_action_date
+      - name: pipeline date
+      - name: pipeline_v2
+      - name: project_info_v2
+      - name: project_v2
+      - name: sauce_action_date
+      - name: solv_action_date
+      - name: sourceType_mapping
+      - name: thredup_action_date
+      - name: ugroup_action_date
+      - name: user_v2
+      - name: vacasa_action_date
+      - name: zava_action_date
+  - name: public
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: batch_added_event
+      - name: batch_added_event_project
+      - name: connection_name
+      - name: db_load
+      - name: db_load_error
+      - name: dbt_model
+      - name: dbt_schedule
+      - name: dbt_selector
+      - name: dbt_source
+      - name: dbt_test
+      - name: destination
+      - name: Etleap_SF_Office_Snacks___Drinks___Sheet1
+      - name: event_file
+      - name: event_file_list
+      - name: exhaustion
+      - name: exhaustion_update_mode_not_in_use
+      - name: export
+      - name: extraction
+      - name: extraction_error
+      - name: extraction_project
+      - name: extraction_property
+      - name: extraction_shard
+      - name: jdbc_connection
+      - name: jdbc_shard
+      - name: jira_extraction
+      - name: marketo_extraction
+      - name: mixpanel_extraction
+      - name: mongo_extraction
+      - name: notification
+      - name: organization
+      - name: pipeline
+      - name: pipeline_grant
+      - name: pipeline_path
+      - name: pipeline_share
+      - name: project
+      - name: project_info
+      - name: quality_check_complete_event
+      - name: salesforce_extraction
+      - name: script
+      - name: script_step
+      - name: transformation
+      - name: transformation_error
+      - name: transformation_file
+      - name: transformation_file_update_mode_not_in_use
+      - name: transformation_group
+      - name: transformation_group_project
+      - name: transformation_report
+      - name: user
+  - name: support_views
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: connection_name
+      - name: destination
+      - name: export
+      - name: jdbc_connection
+      - name: organization
+      - name: pipeline
+      - name: project
+      - name: user
+  - name: us
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: activity_record
+      - name: activity_record_old
+      - name: organization
+      - name: pipeline
+      - name: user
