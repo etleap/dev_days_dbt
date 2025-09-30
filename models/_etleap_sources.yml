@@ -1,0 +1,920 @@
+version: 2
+sources:
+  - name: a1d$_testcreateschemavalidation
+    database: test_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: tes;tt@esth&&fftes;tttt@esth&&fftes;tt@etes;tt@esth&&fftes;tttt@esth&&fftes;tt@etes;tt@esth&&fftes;tttt@esth&&fftes;tt@e
+  - name: andre_dev
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: marcelo
+  - name: archie_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: _functionThatFails_
+      - name: Activities
+      - name: all_parquet_types_with_avro_support
+      - name: all_parquet_types_without_avro_support
+      - name: close_sx5ecca_csv
+      - name: Dispute
+      - name: dms_migration_conn_1___cdc_test
+      - name: dms_migration_conn_1__person
+      - name: dms_migration_conn_2___car
+      - name: dms_migration_conn_2___person
+      - name: drop_pk
+      - name: emoneyInvalidScript_csv
+      - name: empty_parquet
+      - name: empty_string_as_int
+      - name: etleap___text_column
+      - name: haven_intermediate_bucket_inventory
+      - name: history_retaining_append
+      - name: history_retention_test
+      - name: hrudit_test_sample
+      - name: idAndStrings_csv_gz
+      - name: little_endian_csv
+      - name: lq_inventory
+      - name: lqDigitalFacebook_no_dedup
+      - name: manual_type_change_part_2
+      - name: many_files
+      - name: many_files_update
+      - name: many_files_update_with_caching_fix
+      - name: many_files_with_caching_fix
+      - name: multiple_csv_files
+      - name: My_Form_Responses
+      - name: nested_json_frontend_bug
+      - name: null_date_parse
+      - name: nullEndingColumns_csv
+      - name: numberFormatException_parquet
+      - name: oom_recreation_issue_prod
+      - name: orphaned_notification
+      - name: pa_cpnt
+      - name: PA_CPNT_20230913_173226_dat
+      - name: parquet_parquet
+      - name: parquetWithAvroSafeParquetSchemaAndAllTypes_parquet
+      - name: parse_url
+      - name: parsing_error_test
+      - name: person_sha
+      - name: person_sharded
+      - name: pipeline_no_columns
+      - name: postgres_rep_slot_overload_test
+      - name: prod_split_row_and_column_test
+      - name: public___redlake_comparision_test
+      - name: redlake_performance_traditional
+      - name: s3_duplicates_reversed
+      - name: schema_change_bug
+      - name: slow_mysql_query_test
+      - name: spam_refreshes
+      - name: test_event_catchup
+      - name: test_table_exists
+      - name: third_csv
+      - name: threeRows_json
+      - name: Tickets
+      - name: user_info
+      - name: vacasa_extraction_activities
+      - name: vacasa_inventory
+      - name: vacasa_pipeline_activities
+      - name: vacasa_transformation_activities
+      - name: without_batches
+      - name: withPeriod
+  - name: benedict_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: user_info_postgres
+  - name: bing
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: test_api_pipeline_bing
+  - name: caius
+    database: test_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: circleci_pipelines
+      - name: iceberg___cart
+      - name: moderna_audit_logs
+      - name: moderna_security_logs_pre_2022
+      - name: public___char_pk_padding_prod
+      - name: security_logs_inventory
+      - name: test_tf_mysql
+      - name: zendesk_ticket_comments
+      - name: zendesk_tickets
+      - name: zendesk_users
+  - name: caius_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: testEventBased
+  - name: dashboard
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Kyra_Test_JSON___Sheet1-abcde
+      - name: Table_name
+  - name: datadanze
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: aws_consolidated_billing
+      - name: aws_unconsolidated_billing
+      - name: big_value_json
+      - name: dr_shopify_Order_refunds_refund_line_items
+      - name: dr_shopify_Orders_line_items
+      - name: dr_shopify_Orders_refunds
+      - name: freshsales_Accounts
+      - name: freshsales_Appointments
+      - name: freshsales_Contacts
+      - name: freshsales_Deals
+      - name: freshsales_Leads
+      - name: freshsales_Sales_Activities
+      - name: freshsales_Tasks
+      - name: inventory_etleap_extracted
+      - name: unicode_100k_no_control_txt
+  - name: dbtdemo
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: web_events
+  - name: etleap_daniel
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: _Shared_Documents_customers_sales_xlsx_data
+      - name: _Shared_Documents_mock_data_xlsx_sheet_a
+      - name: act_daniel_Campaigns
+      - name: act_daniel_Contact_Notes
+      - name: act_daniel_Contacts
+      - name: act_daniel_Deal_Notes
+      - name: act_daniel_Deals
+      - name: Audience
+      - name: entra_id_users
+      - name: frs_Deal_History_18sep
+      - name: frs_Deal_History_18sep2
+      - name: gitlab_p_Deployments
+      - name: gitlab_p_Group_Labels
+      - name: gitlab_p_Groups
+      - name: gitlab_p_Issues
+      - name: gitlab_p_Jobs
+      - name: gitlab_p_Merge_Requests
+      - name: gitlab_p_Pipelines
+      - name: gitlab_p_Project_Labels
+      - name: gitlab_p_Projects
+      - name: gitlab_p_Releases
+      - name: gitlab_p_Tags
+      - name: gitlab_p_users
+      - name: int_Company
+      - name: intercom_Contact
+      - name: market_share_1_no_pk_no_refresh
+      - name: market_share_1_no_pk_refresh
+      - name: Market_share_1day
+      - name: Market_share_1day_current_date
+      - name: svn_Configuration_Item
+      - name: test_market_share_1day_no_refresh
+  - name: etleap_frederico
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Untitled_spreadsheet___Sheet1
+  - name: etleap_paulo
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: coupa_Invoices_sandbox_integrity_test
+      - name: Deal_History_prod_val_2nd_Att
+      - name: Report__Landing_Page_View432
+      - name: test_dataset___test_multiple_pk_partitioned_prodpks
+      - name: Tickets_fdskprodconfim
+  - name: haven_inventory
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: extraction_activities
+      - name: inventory
+      - name: transformation_activities
+  - name: hrudit_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: calculator_sheet_Sheet
+      - name: data_csv
+      - name: DoorActivityExport_20240313T083054_BOTH_csv
+      - name: test15BatchAdded
+  - name: jaffle_shop
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: orders_source
+  - name: kd_test
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Kyra_Test_JSON___Sheet1
+      - name: lorem_ipsum___Sheet1
+  - name: kolya_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: 2drop_column
+      - name: _managed_investment__performance__prd____trailing_total_return_
+      - name: _risk_analytics__morningstar_global_multi_asset_monthly__prd___
+      - name: account5
+      - name: account5
+      - name: account6
+      - name: account7
+      - name: ad3
+      - name: Ad_Group_Criterion
+      - name: ad_group_criterion2
+      - name: api-transforms-test
+      - name: api-transforms-test2
+      - name: api-transforms-test3
+      - name: api-transforms-test4
+      - name: api-transforms-test5
+      - name: array_json
+      - name: Boomi_Logs_20220629_1522_2
+      - name: DATES3
+      - name: diogotest
+      - name: drop_column
+      - name: empty_file2
+      - name: empty_refresh
+      - name: EMPTY_TABLE_SAP_HANA
+      - name: emtyp_zip
+      - name: errorTest
+      - name: errorTest
+      - name: google_age_range
+      - name: googleads_age_range
+      - name: grooming_transform_type_rename_all_columns
+      - name: grooming_transform_type_rename_column
+      - name: grooming_transform_type_rename_column2
+      - name: gxp_dev_adobe_clickstream_stg
+      - name: hana_binary_prod
+      - name: jira2
+      - name: JUN_2022_Trnx_20220715_1031_csv
+      - name: kustomer_thredup_parsing_error
+      - name: LOB_PROD_NEW
+      - name: LOB_TEST_CTT_PROD
+      - name: LOB_TEST_PROD
+      - name: LOB_TEST_PROD_NEW
+      - name: Mismatch_moderna_csv___Sheet1_csv
+      - name: Mismatch_moderna_csv___Sheet2_csv
+      - name: model_test__kolya
+      - name: moderna_csv
+      - name: moderna_csv_09_14
+      - name: moderna_schema_error2_csv
+      - name: moderna_schema_error3_csv
+      - name: moderna_transformation_failure_failing_script
+      - name: moderna_updat_mode___Sheet1_csv
+      - name: moderna_updat_mode___Sheet1_csv_append
+      - name: mongo_test_schema_change
+      - name: morningstar-selector
+      - name: morningstar_number_transformation
+      - name: morningstar_schema_change
+      - name: morninstar_number_format_issue
+      - name: nest_json_schema_change_prod___Sheet1
+      - name: nest_json_schema_change_prod___Sheet1234234
+      - name: nested_json_demo
+      - name: nested_json_documentation_test___Sheet1
+      - name: nested_json_qa___Sheet1
+      - name: nZiMCSgq_part_m_00000_00000_m_00000_snappy_parquet
+      - name: parse url test
+      - name: PERSON_SDFSF
+      - name: personsdfsf
+      - name: pipeline_migration_test2
+      - name: pipeline_migration_test2
+      - name: pipeline_migration_test3
+      - name: regex_repetition___Sheet1
+      - name: Report__Age_Range_View
+      - name: restaurants_app
+      - name: schema_change_refresh_prod___Sheet1
+      - name: SchemaChangeTest3
+      - name: sftp_test
+      - name: snoozes
+      - name: solv_g4
+      - name: STRING_TEST
+      - name: subtable_test
+      - name: table_schema_test
+      - name: test_api_pipeline_ftp
+      - name: test_api_pipeline_mongo
+      - name: test_api_pipeline_mongo2
+      - name: test_api_pipeline_mongo3
+      - name: test_api_pipeline_mongo4
+      - name: test_api_pipeline_mysql
+      - name: test_api_pipeline_mysql2
+      - name: test_api_pipeline_mysql3
+      - name: test_api_pipeline_mysql4
+      - name: test_api_pipeline_mysql5
+      - name: test_api_pipeline_mysql6
+      - name: test_api_pipeline_postgres27
+      - name: test_create_pipeline
+      - name: test_new_events
+      - name: test_new_schema_refresh
+      - name: test_table_exists
+      - name: test_test
+      - name: test_update_columns
+      - name: thredup_test___Sheet1
+      - name: tier_failing_transformation_json
+      - name: transform-group-project-test
+      - name: type_error_v3
+      - name: underscore_error
+      - name: underscore_error___Sheet1
+      - name: UserVoiceTest
+      - name: zip_error___Sheet1
+  - name: kolya_test2
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: diogotest
+      - name: nested_json_fix___Sheet1_prod
+  - name: luqman
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: item
+      - name: line_item
+      - name: purchase
+      - name: user_info
+      - name: web_events
+  - name: luqman_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: cdc_person
+      - name: comoto_extracted
+      - name: luqman_archived_test
+      - name: public___user_info_prod_load
+      - name: rename_testing_2
+      - name: web_events_extract
+  - name: marcelo_dev
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: data_source___Sheet1
+      - name: data_source___Sheet4
+  - name: mk_test
+    database: jblessing
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: ADMIN___ORACLE_CHAR_SPACE_TEST
+      - name: agg_all_usage
+      - name: Dashboard_Organizations___Sheet1_1
+      - name: Dashboard_Organizations___Sheet1_2
+      - name: etleap_matt_update_test
+      - name: lists_test
+      - name: matt___mysql_char_space_test
+      - name: mk_test___pk_test_table
+      - name: organization_metrics
+      - name: pk_override_test
+      - name: public___postgres_char_space_test
+      - name: sales___orders
+      - name: sales___orders_cdc
+  - name: mode
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Daily Performance Logs
+      - name: daily_log_perf_test2
+      - name: daily_perf_log
+      - name: daily_perf_log_test
+      - name: et_gz
+      - name: multi_col_pk
+      - name: no_pk
+      - name: remove_test2
+      - name: test
+      - name: test_with_null
+      - name: test_with_timestamp
+      - name: test_with_updated_at
+      - name: test_with_updated_at_2
+      - name: tinyint_test
+      - name: unsigned_test
+      - name: xa_test
+  - name: mysql
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: pipelines
+      - name: users
+  - name: peter_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: dbo___float_pk_cdc
+      - name: dbo___float_pk_query
+      - name: etleap___test_encoding_problem-with-wrangler
+      - name: etleap___test_encoding_problem_prod_no_wrangler
+      - name: Test_xlsx_xlsx_Sheet1_checksum-refactor-version
+      - name: validating_in_prod_pr_a
+  - name: public
+    database: demotesttest
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: 2017_11_21_all_us_excl_dist_zip
+      - name: 211827_results_json
+      - name: 432Users_Activity
+      - name: _2017_
+      - name: aacombined_fYgzg_gz
+      - name: account_twitter_test
+      - name: accountcreatedata_csv
+      - name: Ad_Group_Criterion
+      - name: aws_billing_with_emr
+      - name: aws_line_items
+      - name: bh_datetime_log
+      - name: Boolean_and_number___Sheet1
+      - name: Boomi_Logs_20220629_1522
+      - name: call_logs
+      - name: Calls_Queues
+      - name: campaign_twitter_test
+      - name: case1
+      - name: case2
+      - name: Click_Data_DevDay_0326
+      - name: Clickdata_null
+      - name: combined_fYgzg_gz
+      - name: csv_test_files
+      - name: customer_data
+      - name: customer_data2
+      - name: data2_csv
+      - name: data_1_csvaa
+      - name: data_1_csvss
+      - name: dates_and_values
+      - name: demo_event
+      - name: dj_test
+      - name: e_l_12345
+      - name: e_l_542
+      - name: e_l_5432
+      - name: e_l_545674
+      - name: e_l_555567
+      - name: E_L_59
+      - name: E_L_61
+      - name: e_l_6666
+      - name: E_L_68
+      - name: E_L_71
+      - name: E_L_77
+      - name: E_L_89
+      - name: E_L_91
+      - name: EloquaAccountDeleteMe
+      - name: empty_table_destination
+      - name: Etleap_Demo_Public
+      - name: etleap_events
+      - name: etleap_extracted
+      - name: etleap_test_____date_pk_test
+      - name: ett_customer_data
+      - name: ett_movies
+      - name: Event Log DIST STYLE
+      - name: Event_Log
+      - name: Event_Log 12
+      - name: Event_Log 5
+      - name: Event_Log asdf
+      - name: Event_Log CompDecomped
+      - name: Event_Log_2
+      - name: Event_Log_4
+      - name: Event_Log_7
+      - name: Event_Log_adunit
+      - name: Event_Log_ASF
+      - name: Event_Log_CI
+      - name: Event_Log_DE
+      - name: Event_Log_FIXED
+      - name: Event_Log_fold_json
+      - name: Event_Log_GD
+      - name: Event_Log_JF
+      - name: Event_Log_MB
+      - name: Event_Log_null_date
+      - name: Event_Log_renamed_headers
+      - name: Event_Log_try_again
+      - name: Event_Log_with_byte_offset
+      - name: Event_Logasdf a
+      - name: Fake_Data_Steve___Sheet1
+      - name: Fake_Data_Steve___Sheet1_V2
+      - name: frunk_log
+      - name: fuze_test_csv
+      - name: GCS csv_txt
+      - name: google_ads_comparison
+      - name: Gusto_Payroll_Headers
+      - name: Gusto_Payroll_Hours
+      - name: Hash_test
+      - name: Hubspot_Campaigns
+      - name: Hubspot_Contacts
+      - name: HubspotTest_Companies_archie
+      - name: HubspotTest_Deals_archie
+      - name: IC_User
+      - name: input_schema_changes
+      - name: Insights BH age_gender
+      - name: Insights_BH
+      - name: Insights_by_Ad
+      - name: invalid_json
+      - name: invalid_json2
+      - name: inventory
+      - name: Issues
+      - name: it_test_append_archie
+      - name: item
+      - name: JIRA_Changelog
+      - name: JIRA_Comments
+      - name: Jira_Groups
+      - name: JIRA_Multiple_Choice_Field
+      - name: JIRA_Priorities
+      - name: JIRA_Projects
+      - name: JIRA_Statuses
+      - name: JIRA_Users
+      - name: JordanTestUniqueIdentifier
+      - name: Leads_fail
+      - name: line_item
+      - name: movies
+      - name: multi_col_pk
+      - name: multi_col_pk
+      - name: multi_col_pk
+      - name: mutable_event_log
+      - name: NetSuite Account
+      - name: NetSuite Contact
+      - name: noschema
+      - name: ns_Account
+      - name: ns_Address
+      - name: ns_AssemblyBuild
+      - name: OF_Localytics
+      - name: Outlook Events
+      - name: Outlook Messages
+      - name: parameterized_yogesh
+      - name: parsing_errors
+      - name: parsing_errors_basis
+      - name: pc_achievement
+      - name: pc_artist_song
+      - name: pc_genre_artist
+      - name: pc_genre_ride
+      - name: pc_genre_song
+      - name: pc_instructor
+      - name: pc_order_coupon
+      - name: pc_peloton
+      - name: pc_playlist_ride
+      - name: pc_playlist_song
+      - name: pc_ridetype
+      - name: pc_shipment_orderitem
+      - name: pc_store
+      - name: PD_Activities
+      - name: PD_Campaigns
+      - name: pd_teams
+      - name: pd_test_alerts
+      - name: pd_triggers
+      - name: pd_users_teams
+      - name: person_directory
+      - name: pg_customer_data
+      - name: pg_movies
+      - name: Phone_Calls
+      - name: purchase
+      - name: qa_test_with_updated_at_2_2
+      - name: redfin_data_center_csv_gz
+      - name: redfin_data_center_utf8_csv
+      - name: 'redfin_data_center_utf8_csv 2 '
+      - name: redfin_data_center_utf8_csv_gz
+      - name: redfin_data_center_utf8_lh_csv
+      - name: redfin_data_center_utf8_lh_csv2
+      - name: remove_test2
+      - name: Resources_238__
+      - name: restaurants
+      - name: restaurantssss
+      - name: s3_many_files
+      - name: sample_snappy_parquet
+      - name: schemachange_tester
+      - name: segment_et
+      - name: Segment_ET_Copy
+      - name: SFTP_CSV
+      - name: Sharded_PK_test
+      - name: ShS
+      - name: Stein_Event_Log
+      - name: stein_test_sci_notation
+      - name: stein_test_wide_string
+      - name: streaming_et_perm_test
+      - name: streaming_et_perm_test_2
+      - name: subtable_json
+      - name: subtable_json2
+      - name: table_figma
+      - name: test
+      - name: test
+      - name: test_case1
+      - name: test_for_all_files_size
+      - name: test_jdbc_script
+      - name: test_mysql
+      - name: test_pd_obfuscator
+      - name: test_refresh_completion
+      - name: test_s3_folder
+      - name: test_schema___multi_col_pk
+      - name: test_table
+      - name: test_with_changing_columns
+      - name: test_with_updated_at
+      - name: test_with_updated_at3
+      - name: test_with_updated_at_2
+      - name: test_with_updated_at_4
+      - name: test_wrangler_'table___Sheet1
+      - name: test_wrangler_calculation___Sheet1-1
+      - name: testEmpty
+      - name: thirdLineHeader_csv
+      - name: update
+      - name: update_mode
+      - name: update_parse_json_array
+      - name: update_test_2
+      - name: user
+      - name: User_s_Profile
+      - name: warehouse_updater_confirmation_redshift
+      - name: Website_Events
+      - name: whitespace_test_123
+      - name: whitespace_test_12345
+      - name: whitespace_test_rename
+      - name: wr_W_AR_XACT_F
+      - name: wr_W_CUSTOMER_ACCOUNT_D
+      - name: wr_W_CUSTOMER_LOC_D
+      - name: wr_W_DAY_D
+      - name: wr_W_EMPLOYEE_D
+      - name: wr_W_GL_ACCOUNT_D
+      - name: wr_W_GL_SEGMENT_D
+      - name: wr_W_LEDGER_D
+      - name: wr_W_MCAL_DAY_D
+      - name: wr_W_PAYMENT_TERMS_D
+      - name: wr_W_PRODUCT_D
+      - name: wr_W_SALES_INVOICE_LINE_F
+      - name: wr_W_SALES_ORDER_LINE_F
+      - name: wr_W_STATUS_D
+      - name: wr_W_XACT_TYPE_D
+      - name: wr_WC_AVG_XE_RATES_LKP
+      - name: wr_WC_BUDGET_XE_RATES_LKP
+      - name: wr_WC_CONTACT_D
+      - name: wr_WC_LICENSE_D
+      - name: wr_WC_SALES_INVOICE_SLS_SPLIT_FX
+      - name: wr_WC_SALES_ORDER_SLS_SPLIT_FX
+      - name: wr_WC_SALESFORCE_VERTICAL_D
+      - name: wr_WC_SALESREP_TERRITORY_D
+      - name: Zendesk_Ticket_Metrics
+      - name: Zendesk_Tickets
+      - name: Zendesk_Users
+      - name: Zip Sample
+  - name: redshift_to_redshift
+    database: datadanze
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: qa_multi_col_pk
+      - name: qa_test
+      - name: qa_test_with_updated_at_2
+      - name: test_with_newline_dest
+  - name: shannon_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: data_compact_1_6mb_json
+      - name: etleap___person_hr
+      - name: json_arr_compact_json
+      - name: large_json_1_20MB_column_txt2
+      - name: OT___CONTACTS_BLOB
+      - name: prod_no_tls
+      - name: prod_oracle_tls
+      - name: S3_Shannon_export_versions_match
+      - name: S3_Shannon_migrating_npe
+      - name: S3_Shannon_NPE_migration_test
+      - name: S3_Shannon_refresh_no_copy_from_destination
+      - name: S3_Shannon_replicate_export_bug
+      - name: S3_Shannon_test_copy_bae_1
+      - name: S3_Shannon_test_copy_bae_2
+      - name: S3_Shannon_test_copy_bae_3
+      - name: S3_Shannon_test_copy_bae_4
+      - name: S3_Shannon_test_migrate_export
+      - name: S3_Shannon_test_migrate_export_2
+      - name: S3_Shannon_testing_bae_copy
+      - name: SHANNON___USER_DATA_1
+      - name: shannon_float_pk_test___composite_pk
+      - name: shannon_float_pk_test___higher_precision_single_pk
+      - name: shannon_float_pk_test___negative_single_pk
+      - name: shannon_float_pk_test___single_pk
+      - name: shannon_test__customers
+      - name: shannon_testing_redshift_jdbc_metadata_queries
+  - name: stein_dev
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Event_Log 1
+      - name: Event_Log 2
+      - name: Event_Log_date_bug
+      - name: Sample_Data Test
+      - name: test_pipeline
+  - name: stripe
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: payments
+  - name: yijun_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: rename_col_verify_a
+      - name: rename_col_verify_b
+  - name: zygi_dev
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: blablabla
+      - name: Test_Drop_Out_2
+  - name: zygi_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: 10_snappy_parquet
+      - name: 1_parquet
+      - name: 1_parquet_2
+      - name: 1_parquet_polina
+      - name: 1fva87lw5n17di_australian_srs_550_surveyed_actual_asset_allocat
+      - name: 85VBUGDH_part_m_00000_00000_m_00000_snappy_parquet12
+      - name: _gx_test_test_folder_2_
+      - name: _test_nest_
+      - name: Accountout
+      - name: active_RGL_20250430_column_removed_xlsx_Sheet1
+      - name: Annual_Average_Daily_Traffic
+      - name: asdfasdf
+      - name: autovarchar
+      - name: autovarchar_mysql
+      - name: blahhhh
+      - name: boolean_failure_txt
+      - name: CA_youtube_music_audio_streams_20210920_2_txt
+      - name: carrrrr
+      - name: chrlnag
+      - name: chrlnags
+      - name: chrlng
+      - name: confirm_ct_logging
+      - name: confirm_dynamic_varchar_append_out
+      - name: confirm_dynamic_varchar_append_out-nonadj
+      - name: confirm_dynamic_varchar_replace_out
+      - name: confirm_json_e2e
+      - name: Contact_Segmentsss
+      - name: customer_impala_parquet
+      - name: customer_impala_parqueta
+      - name: customer_impala_parquets
+      - name: data1_csvaa
+      - name: data1_csvs
+      - name: data_1___Sheet11
+      - name: data_1___Sheet1111
+      - name: data_1___Sheet1234
+      - name: data_1___Sheet142345
+      - name: data_1___Sheet1adsafsd
+      - name: data_1___Sheet1asdf
+      - name: data_1_csv
+      - name: dbo___test_nchar
+      - name: eet_principal_adverse_indicators_update_parquet
+      - name: EMR_Fee_Analysis___Against_JB
+      - name: EMR_Fee_Analysis___MySQL
+      - name: entra_users_mk_2
+      - name: etleap___car__sharded_batch_prod2_test
+      - name: etleap___car_sharded_batch_prod3_test
+      - name: etleap___department__sharded_batch_prod2_test
+      - name: etleap___department_sharded_batch_prod3_test
+      - name: etleap___department_sharded_single_prod3_test
+      - name: etleap___person
+      - name: etleap___person
+      - name: etleap___person_schema_test
+      - name: file_with_repeated_field_name_parquet
+      - name: fixedoutput_parquetasdf
+      - name: ga4bs
+      - name: github_webhooks
+      - name: globalx_rpt_test_txt
+      - name: GlobalXTradesToGeneva_04112023_185339_xml
+      - name: Group_Memberships_SBT
+      - name: Groups_SBT
+      - name: int_failure_txt
+      - name: INVENTORY_20230704_082407_IN_3055_0000001_xml
+      - name: list_parquet
+      - name: Macros_SBT
+      - name: map_parquet
+      - name: merge_test
+      - name: morninstar_number_format_issue
+      - name: mrna0iss_csv
+      - name: mRNA_1273_P205_EDC_CM_20211117_csv
+      - name: mrna_stuff
+      - name: mrna_xml2
+      - name: mrna_xmlS
+      - name: mysql_test_json_redshift
+      - name: nation_impala_parquet
+      - name: nation_impala_parqueta
+      - name: nation_impala_parquets
+      - name: nested_json_test
+      - name: Organizations_SBT
+      - name: OT___CONTACTS
+      - name: OT_CONTACTS_TEST_DATE
+      - name: out_csv
+      - name: out_csvasdf
+      - name: overflowingCsv_copy_csv
+      - name: parquet_invalid_step
+      - name: part_m_00000_00000__5_
+      - name: part_m_00000_00000__6_
+      - name: pipe_separated_csv
+      - name: postgres_test_json_redshift
+      - name: prod_test_rename
+      - name: public___array_truncation_test
+      - name: public___business_hours
+      - name: rename_column_prod_test
+      - name: s3_json_bug
+      - name: SCDL_DB_PROCH_1
+      - name: SCDL_DB_PROCH_O
+      - name: schema_change_stop
+      - name: schema_change_test
+      - name: seconds_parquet_feeder
+      - name: seconds_parquetasdf
+      - name: sheet-sch
+      - name: sheet_autovarchar
+      - name: sheets-conf-hr
+      - name: skip_iss_json
+      - name: SLA_Policies_SBT
+      - name: subtable_thingy
+      - name: super_type
+      - name: Tags_SBT
+      - name: taken_name
+      - name: Task
+      - name: test_autovarchar_delta_out
+      - name: test_autovarchar_delta_out_app
+      - name: test_latestsss
+      - name: TEST_MULTIPLE_BINARY_PKS
+      - name: test_nan_csv
+      - name: test_nan_parquet
+      - name: TEST_VARBINARY_PK
+      - name: test_varchar_resize
+      - name: testRounding_parquet
+      - name: testRounding_parquetasdf
+      - name: threeRows_snappy_parquet_number
+      - name: ticket_24038_sample
+      - name: Ticket_Audits_SBT
+      - name: Ticket_Comments_SBT
+      - name: Ticket_Fields_SBT
+      - name: Ticket_Forms_SBT
+      - name: Ticket_Metrics_SBT
+      - name: Tickets_SBT
+      - name: to_flatten2_json
+      - name: to_flatten2_json_v2
+      - name: type_setting_rename_column_json_v11
+      - name: type_setting_rename_column_json_v4
+      - name: type_setting_rename_json
+      - name: type_setting_rename_json_v2
+      - name: union_bool_parquet
+      - name: UserComplianceDetails_20220106_110054_csv
+      - name: Users_SBT
+      - name: yay_csv
+      - name: znGkHUou_part_m_00000_00000_m_00000_snappy_parquet
