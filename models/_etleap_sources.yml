@@ -2,6 +2,9 @@ version: 2
 sources:
   - name: DBTDEMO
     database: etleap_dev
+    quoting:
+        schema: true
+        identifier: true
     tables:
       - name: ITEM
       - name: LINE_ITEM
@@ -10,6 +13,9 @@ sources:
       - name: WEB_EVENTS
   - name: ETLEAP_TEST
     database: test_etleap
+    quoting:
+        schema: true
+        identifier: true
     tables:
       - name: 2023_YELLOW_TAXI_TRIP_DATA
       - name: _BATESTETLEAP___CAR
