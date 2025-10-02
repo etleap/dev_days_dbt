@@ -1,0 +1,1 @@
+select * from {{ source('ETLEAP_TEST', 'Web_Events_TEST') }} limit 10
