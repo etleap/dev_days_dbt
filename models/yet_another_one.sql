@@ -1,1 +1,1 @@
-SELECT 1 as one;
+SELECT 1 as one
