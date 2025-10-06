@@ -33,9 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dev_days_dbt:
-    marts:
-      +materialized: table
-      +tags: all_models
     trade_anomaly:
       +materialized: table
       +tags: trade_anomaly
