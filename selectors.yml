@@ -13,4 +13,3 @@ selectors:
         - exclude:
             - method: tag
               value: trade_anomaly
-          
