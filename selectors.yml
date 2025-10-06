@@ -2,14 +2,14 @@ selectors:
   - name: all_models
     definition:
       tag: all_models
-  - name: spend_by_login
-    definition:
-      method: fqn
-      value: spend_by_login
-  - name: logins_by_user
-    definition:
-      method: fqn
-      value: logins_by_user
   - name: trade_anomaly
     definition:
       tag: trade_anomaly
+  - name: tickets
+    definition:
+      union:
+        - method: fqn
+          value: "*"
+        - exclude:
+            - method: tag
+              value: trade_anomaly
