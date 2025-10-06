@@ -406,7 +406,10 @@ sources:
       - name: agg_all_usage
       - name: Dashboard_Organizations___Sheet1_1
       - name: Dashboard_Organizations___Sheet1_2
+      - name: dbo___orders_view
       - name: etleap_matt_update_test
+      - name: gx_connections
+      - name: gx_pipelines
       - name: lists_test
       - name: matt___mysql_char_space_test
       - name: mk_test___pk_test_table
@@ -415,6 +418,8 @@ sources:
       - name: public___postgres_char_space_test
       - name: sales___orders
       - name: sales___orders_cdc
+      - name: sales___orders_cdc_2
+      - name: sales___orders_cdc_no_owner
   - name: mode
     database: datadanze
     quoting:
@@ -455,6 +460,9 @@ sources:
       - name: dbo___float_pk_query
       - name: etleap___test_encoding_problem-with-wrangler
       - name: etleap___test_encoding_problem_prod_no_wrangler
+      - name: Peter__dev_Fold_JSONArray_Test___Sheet1
+      - name: peter_mv_webstore_____item__
+      - name: peter_perm_test_etleap_____person__
       - name: Test_xlsx_xlsx_Sheet1_checksum-refactor-version
       - name: validating_in_prod_pr_a
   - name: public
