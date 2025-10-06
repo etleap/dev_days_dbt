@@ -116,6 +116,7 @@ sources:
       - name: Web_Events_PD5
       - name: Web_Events_PER
       - name: Web_Events_PG
+      - name: WEB_EVENTS_PGE2
       - name: WEB_EVENTS_PL
       - name: WEB_EVENTS_PM
       - name: WEB_EVENTS_RE
