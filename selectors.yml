@@ -7,7 +7,6 @@ selectors:
       tag: trade_anomaly
   - name: tickets
     definition:
-     definition:
       union:
         - method: fqn
           value: "*"
