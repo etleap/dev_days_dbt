@@ -1,1 +1,1 @@
-SELECT count(*) FROM {{ source('PUBLIC', 'TICKETS') }} where 
+SELECT count(*) FROM {{ source('PUBLIC', 'TICKETS') }} 
