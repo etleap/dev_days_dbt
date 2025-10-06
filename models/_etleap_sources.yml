@@ -15,5 +15,6 @@ sources:
     tables:
       - name: ORDERS
       - name: SALESFORCE_ACCOUNT
+      - name: TICKETS
       - name: TRADE_ANOMALY
       - name: WATCHLIST
