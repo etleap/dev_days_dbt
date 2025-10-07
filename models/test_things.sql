@@ -1,1 +1,0 @@
-SELECT count(*) as total_rows FROM {{ source('PUBLIC', 'TICKETS') }} 
