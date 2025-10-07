@@ -14,7 +14,6 @@ sources:
         identifier: true
     tables:
       - name: ORDERS
-      - name: ORGANIZATIONS
       - name: SALESFORCE_ACCOUNT
       - name: TICKETS
       - name: TRADE_ANOMALY
