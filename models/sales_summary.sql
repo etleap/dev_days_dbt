@@ -1,1 +1,1 @@
-SELECT * from {{ source('PUBLIC', 'SALESFORCE_ACCOUNT') }};
+SELECT * from {{ source('PUBLIC', 'SALESFORCE_ACCOUNT') }}
