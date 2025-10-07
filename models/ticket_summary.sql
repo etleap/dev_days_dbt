@@ -1,3 +1,3 @@
 SELECT * FROM {{ source('PUBLIC', 'TICKETS') }} t
-join {{ source('PUBLIC', 'SALESFORCE_ACCOUNT') }} s
+join {{ ref('sales_summary') }} s
 on s.account_id = t.org_account_id
