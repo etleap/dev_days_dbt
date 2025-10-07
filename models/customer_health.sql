@@ -1,4 +1,4 @@
 SELECT *
 FROM {{ ref('sales_summary') }} s
-JOIN {{ source('PUBLIC', 'TICKETS') }} t
+JOIN {{ ref('ticket_summary') }} t
 on t.account_id = s.account_id
