@@ -1,4 +1,3 @@
-SELECT t.*, o.account_id as org_account_id
-FROM {{ source('PUBLIC', 'TICKETS') }} t
-JOIN PUBLIC.ORGANIZATIONS o
-on t.organization_id = o.id
+SELECT * FROM {{ source('PUBLIC', 'TICKETS') }} t
+join {{ source('PUBLIC', 'SALESFORCE_ACCOUNT') }} s
+on s.account_id = t.org_account_id
