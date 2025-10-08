@@ -36,3 +36,6 @@ models:
     trade_anomaly:
       +materialized: table
       +tags: trade_anomaly
+    tickets:
+      +materialized: table
+      +tags: tickets
