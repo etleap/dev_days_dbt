@@ -1,7 +1,4 @@
 selectors:
-  - name: all_models
-    definition:
-      tag: all_models
   - name: trade_anomaly
     definition:
       tag: trade_anomaly
