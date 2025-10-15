@@ -1,1 +1,1 @@
-select 1 as x
+select 1 as x, 2 as y
