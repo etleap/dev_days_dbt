@@ -1,27 +1,13 @@
 version: 2
 sources:
-  - name: CAIUS_DEV
-    database: SNOWFLAKE_2025
+  - name: archie_test
+    database: dev_etleap
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: WEB_EVENTS
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TICKETS
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+      - name: _support_morningstar_messed_up_script_
+      - name: avroDataWithAnalystRatingPillar_parquet
+      - name: Don't Delete Me
+      - name: oom_issue_recreation
+      - name: split_rows_and_columns_etl
