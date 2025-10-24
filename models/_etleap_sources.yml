@@ -1,27 +1,16 @@
 version: 2
 sources:
-  - name: CAIUS_DEV
-    database: SNOWFLAKE_2025
+  - name: caius
+    database: test_etleap
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: WEB_EVENTS
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TICKETS
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+      - name: Account_gradle
+      - name: etleap_test___date_pk_test
+      - name: etleap_test___history_rention
+      - name: event_00000_json_gz
+      - name: event_00000_json_gz_1
+      - name: event_00000_json_gz_2
+      - name: gradle_test
+      - name: Task_Spot_Instance_Fleet_Cost_Analysis___Old
