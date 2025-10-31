@@ -1,1 +1,1 @@
-SELECT 1 as x, 2 as y;
+SELECT 1 as x, 2 as y, 3 as z;
