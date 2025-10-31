@@ -1,27 +1,3 @@
 version: 2
-sources:
-  - name: CAIUS_DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TICKETS
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+sources: [
+    ]
