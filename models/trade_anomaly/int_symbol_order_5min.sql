@@ -1,9 +1,3 @@
-{{ config(
-    pre_hook=[
-        "set MIN_DATE = dateadd(minute, -5, current_timestamp())"
-    ]
-) }}
-
 select
   account_id,
   symbol,
