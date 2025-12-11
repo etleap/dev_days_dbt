@@ -6,4 +6,4 @@ FROM {{ source('PUBLIC', 'SALESFORCE_ACCOUNT') }}
 {% if condition %}
     {{ log("hi there",true) }}
 {% endif %}
-{% endif %} 
+{% endmacro %} 
