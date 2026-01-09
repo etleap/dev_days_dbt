@@ -6,7 +6,6 @@
 
 select
   account_id,
-  symbol,
   sum(qty)                                   as shares_submitted_10m,
   sum(filled_qty)                            as shares_filled_10m,
   count_if(status = 'CANCELED')              as cancels_10m,
