@@ -1,16 +1,3 @@
 version: 2
-sources:
-  - name: aayan_test
-    database: dev_etleap
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: aayan_car
-      - name: Aayan_S3_Input
-      - name: coming_in_from_localhost_aayan_car4
-      - name: example_4
-      - name: example_table
-      - name: example_table_2
-      - name: paul_the_person
-      - name: public___person
+sources: [
+    ]

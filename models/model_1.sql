@@ -1,1 +1,1 @@
-SELECT * from {{ source('aayan_test', 'paul_the_person') }}
+  select '{{ env_var("DBT_TEST_VAR") }}' as env_var_value;
