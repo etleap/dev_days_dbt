@@ -1,4 +1,1003 @@
 selectors:
-  - name: selector_1
-    description: "Select all models"
-    definition: "*"
+  - name: tickets
+    description: "Trying really hard to select two tables"
+    definition:
+      union:
+        - method: fqn
+          value: model_1
+        - method: fqn
+          value: model_2
+        - method: fqn
+          value: model_3
+        - method: fqn
+          value: model_4
+        - method: fqn
+          value: model_5
+        - method: fqn
+          value: model_6
+        - method: fqn
+          value: model_7
+        - method: fqn
+          value: model_8
+        - method: fqn
+          value: model_9
+        - method: fqn
+          value: model_10
+        - method: fqn
+          value: model_11
+        - method: fqn
+          value: model_12
+        - method: fqn
+          value: model_13
+        - method: fqn
+          value: model_14
+        - method: fqn
+          value: model_15
+        - method: fqn
+          value: model_16
+        - method: fqn
+          value: model_17
+        - method: fqn
+          value: model_18
+        - method: fqn
+          value: model_19
+        - method: fqn
+          value: model_20
+        - method: fqn
+          value: model_21
+        - method: fqn
+          value: model_22
+        - method: fqn
+          value: model_23
+        - method: fqn
+          value: model_24
+        - method: fqn
+          value: model_25
+        - method: fqn
+          value: model_26
+        - method: fqn
+          value: model_27
+        - method: fqn
+          value: model_28
+        - method: fqn
+          value: model_29
+        - method: fqn
+          value: model_30
+        - method: fqn
+          value: model_31
+        - method: fqn
+          value: model_32
+        - method: fqn
+          value: model_33
+        - method: fqn
+          value: model_34
+        - method: fqn
+          value: model_35
+        - method: fqn
+          value: model_36
+        - method: fqn
+          value: model_37
+        - method: fqn
+          value: model_38
+        - method: fqn
+          value: model_39
+        - method: fqn
+          value: model_40
+        - method: fqn
+          value: model_41
+        - method: fqn
+          value: model_42
+        - method: fqn
+          value: model_43
+        - method: fqn
+          value: model_44
+        - method: fqn
+          value: model_45
+        - method: fqn
+          value: model_46
+        - method: fqn
+          value: model_47
+        - method: fqn
+          value: model_48
+        - method: fqn
+          value: model_49
+        - method: fqn
+          value: model_50
+        - method: fqn
+          value: model_51
+        - method: fqn
+          value: model_52
+        - method: fqn
+          value: model_53
+        - method: fqn
+          value: model_54
+        - method: fqn
+          value: model_55
+        - method: fqn
+          value: model_56
+        - method: fqn
+          value: model_57
+        - method: fqn
+          value: model_58
+        - method: fqn
+          value: model_59
+        - method: fqn
+          value: model_60
+        - method: fqn
+          value: model_61
+        - method: fqn
+          value: model_62
+        - method: fqn
+          value: model_63
+        - method: fqn
+          value: model_64
+        - method: fqn
+          value: model_65
+        - method: fqn
+          value: model_66
+        - method: fqn
+          value: model_67
+        - method: fqn
+          value: model_68
+        - method: fqn
+          value: model_69
+        - method: fqn
+          value: model_70
+        - method: fqn
+          value: model_71
+        - method: fqn
+          value: model_72
+        - method: fqn
+          value: model_73
+        - method: fqn
+          value: model_74
+        - method: fqn
+          value: model_75
+        - method: fqn
+          value: model_76
+        - method: fqn
+          value: model_77
+        - method: fqn
+          value: model_78
+        - method: fqn
+          value: model_79
+        - method: fqn
+          value: model_80
+        - method: fqn
+          value: model_81
+        - method: fqn
+          value: model_82
+        - method: fqn
+          value: model_83
+        - method: fqn
+          value: model_84
+        - method: fqn
+          value: model_85
+        - method: fqn
+          value: model_86
+        - method: fqn
+          value: model_87
+        - method: fqn
+          value: model_88
+        - method: fqn
+          value: model_89
+        - method: fqn
+          value: model_90
+        - method: fqn
+          value: model_91
+        - method: fqn
+          value: model_92
+        - method: fqn
+          value: model_93
+        - method: fqn
+          value: model_94
+        - method: fqn
+          value: model_95
+        - method: fqn
+          value: model_96
+        - method: fqn
+          value: model_97
+        - method: fqn
+          value: model_98
+        - method: fqn
+          value: model_99
+        - method: fqn
+          value: model_100
+        - method: fqn
+          value: model_101
+        - method: fqn
+          value: model_102
+        - method: fqn
+          value: model_103
+        - method: fqn
+          value: model_104
+        - method: fqn
+          value: model_105
+        - method: fqn
+          value: model_106
+        - method: fqn
+          value: model_107
+        - method: fqn
+          value: model_108
+        - method: fqn
+          value: model_109
+        - method: fqn
+          value: model_110
+        - method: fqn
+          value: model_111
+        - method: fqn
+          value: model_112
+        - method: fqn
+          value: model_113
+        - method: fqn
+          value: model_114
+        - method: fqn
+          value: model_115
+        - method: fqn
+          value: model_116
+        - method: fqn
+          value: model_117
+        - method: fqn
+          value: model_118
+        - method: fqn
+          value: model_119
+        - method: fqn
+          value: model_120
+        - method: fqn
+          value: model_121
+        - method: fqn
+          value: model_122
+        - method: fqn
+          value: model_123
+        - method: fqn
+          value: model_124
+        - method: fqn
+          value: model_125
+        - method: fqn
+          value: model_126
+        - method: fqn
+          value: model_127
+        - method: fqn
+          value: model_128
+        - method: fqn
+          value: model_129
+        - method: fqn
+          value: model_130
+        - method: fqn
+          value: model_131
+        - method: fqn
+          value: model_132
+        - method: fqn
+          value: model_133
+        - method: fqn
+          value: model_134
+        - method: fqn
+          value: model_135
+        - method: fqn
+          value: model_136
+        - method: fqn
+          value: model_137
+        - method: fqn
+          value: model_138
+        - method: fqn
+          value: model_139
+        - method: fqn
+          value: model_140
+        - method: fqn
+          value: model_141
+        - method: fqn
+          value: model_142
+        - method: fqn
+          value: model_143
+        - method: fqn
+          value: model_144
+        - method: fqn
+          value: model_145
+        - method: fqn
+          value: model_146
+        - method: fqn
+          value: model_147
+        - method: fqn
+          value: model_148
+        - method: fqn
+          value: model_149
+        - method: fqn
+          value: model_150
+        - method: fqn
+          value: model_151
+        - method: fqn
+          value: model_152
+        - method: fqn
+          value: model_153
+        - method: fqn
+          value: model_154
+        - method: fqn
+          value: model_155
+        - method: fqn
+          value: model_156
+        - method: fqn
+          value: model_157
+        - method: fqn
+          value: model_158
+        - method: fqn
+          value: model_159
+        - method: fqn
+          value: model_160
+        - method: fqn
+          value: model_161
+        - method: fqn
+          value: model_162
+        - method: fqn
+          value: model_163
+        - method: fqn
+          value: model_164
+        - method: fqn
+          value: model_165
+        - method: fqn
+          value: model_166
+        - method: fqn
+          value: model_167
+        - method: fqn
+          value: model_168
+        - method: fqn
+          value: model_169
+        - method: fqn
+          value: model_170
+        - method: fqn
+          value: model_171
+        - method: fqn
+          value: model_172
+        - method: fqn
+          value: model_173
+        - method: fqn
+          value: model_174
+        - method: fqn
+          value: model_175
+        - method: fqn
+          value: model_176
+        - method: fqn
+          value: model_177
+        - method: fqn
+          value: model_178
+        - method: fqn
+          value: model_179
+        - method: fqn
+          value: model_180
+        - method: fqn
+          value: model_181
+        - method: fqn
+          value: model_182
+        - method: fqn
+          value: model_183
+        - method: fqn
+          value: model_184
+        - method: fqn
+          value: model_185
+        - method: fqn
+          value: model_186
+        - method: fqn
+          value: model_187
+        - method: fqn
+          value: model_188
+        - method: fqn
+          value: model_189
+        - method: fqn
+          value: model_190
+        - method: fqn
+          value: model_191
+        - method: fqn
+          value: model_192
+        - method: fqn
+          value: model_193
+        - method: fqn
+          value: model_194
+        - method: fqn
+          value: model_195
+        - method: fqn
+          value: model_196
+        - method: fqn
+          value: model_197
+        - method: fqn
+          value: model_198
+        - method: fqn
+          value: model_199
+        - method: fqn
+          value: model_200
+        - method: fqn
+          value: model_201
+        - method: fqn
+          value: model_202
+        - method: fqn
+          value: model_203
+        - method: fqn
+          value: model_204
+        - method: fqn
+          value: model_205
+        - method: fqn
+          value: model_206
+        - method: fqn
+          value: model_207
+        - method: fqn
+          value: model_208
+        - method: fqn
+          value: model_209
+        - method: fqn
+          value: model_210
+        - method: fqn
+          value: model_211
+        - method: fqn
+          value: model_212
+        - method: fqn
+          value: model_213
+        - method: fqn
+          value: model_214
+        - method: fqn
+          value: model_215
+        - method: fqn
+          value: model_216
+        - method: fqn
+          value: model_217
+        - method: fqn
+          value: model_218
+        - method: fqn
+          value: model_219
+        - method: fqn
+          value: model_220
+        - method: fqn
+          value: model_221
+        - method: fqn
+          value: model_222
+        - method: fqn
+          value: model_223
+        - method: fqn
+          value: model_224
+        - method: fqn
+          value: model_225
+        - method: fqn
+          value: model_226
+        - method: fqn
+          value: model_227
+        - method: fqn
+          value: model_228
+        - method: fqn
+          value: model_229
+        - method: fqn
+          value: model_230
+        - method: fqn
+          value: model_231
+        - method: fqn
+          value: model_232
+        - method: fqn
+          value: model_233
+        - method: fqn
+          value: model_234
+        - method: fqn
+          value: model_235
+        - method: fqn
+          value: model_236
+        - method: fqn
+          value: model_237
+        - method: fqn
+          value: model_238
+        - method: fqn
+          value: model_239
+        - method: fqn
+          value: model_240
+        - method: fqn
+          value: model_241
+        - method: fqn
+          value: model_242
+        - method: fqn
+          value: model_243
+        - method: fqn
+          value: model_244
+        - method: fqn
+          value: model_245
+        - method: fqn
+          value: model_246
+        - method: fqn
+          value: model_247
+        - method: fqn
+          value: model_248
+        - method: fqn
+          value: model_249
+        - method: fqn
+          value: model_250
+        - method: fqn
+          value: model_251
+        - method: fqn
+          value: model_252
+        - method: fqn
+          value: model_253
+        - method: fqn
+          value: model_254
+        - method: fqn
+          value: model_255
+        - method: fqn
+          value: model_256
+        - method: fqn
+          value: model_257
+        - method: fqn
+          value: model_258
+        - method: fqn
+          value: model_259
+        - method: fqn
+          value: model_260
+        - method: fqn
+          value: model_261
+        - method: fqn
+          value: model_262
+        - method: fqn
+          value: model_263
+        - method: fqn
+          value: model_264
+        - method: fqn
+          value: model_265
+        - method: fqn
+          value: model_266
+        - method: fqn
+          value: model_267
+        - method: fqn
+          value: model_268
+        - method: fqn
+          value: model_269
+        - method: fqn
+          value: model_270
+        - method: fqn
+          value: model_271
+        - method: fqn
+          value: model_272
+        - method: fqn
+          value: model_273
+        - method: fqn
+          value: model_274
+        - method: fqn
+          value: model_275
+        - method: fqn
+          value: model_276
+        - method: fqn
+          value: model_277
+        - method: fqn
+          value: model_278
+        - method: fqn
+          value: model_279
+        - method: fqn
+          value: model_280
+        - method: fqn
+          value: model_281
+        - method: fqn
+          value: model_282
+        - method: fqn
+          value: model_283
+        - method: fqn
+          value: model_284
+        - method: fqn
+          value: model_285
+        - method: fqn
+          value: model_286
+        - method: fqn
+          value: model_287
+        - method: fqn
+          value: model_288
+        - method: fqn
+          value: model_289
+        - method: fqn
+          value: model_290
+        - method: fqn
+          value: model_291
+        - method: fqn
+          value: model_292
+        - method: fqn
+          value: model_293
+        - method: fqn
+          value: model_294
+        - method: fqn
+          value: model_295
+        - method: fqn
+          value: model_296
+        - method: fqn
+          value: model_297
+        - method: fqn
+          value: model_298
+        - method: fqn
+          value: model_299
+        - method: fqn
+          value: model_300
+        - method: fqn
+          value: model_301
+        - method: fqn
+          value: model_302
+        - method: fqn
+          value: model_303
+        - method: fqn
+          value: model_304
+        - method: fqn
+          value: model_305
+        - method: fqn
+          value: model_306
+        - method: fqn
+          value: model_307
+        - method: fqn
+          value: model_308
+        - method: fqn
+          value: model_309
+        - method: fqn
+          value: model_310
+        - method: fqn
+          value: model_311
+        - method: fqn
+          value: model_312
+        - method: fqn
+          value: model_313
+        - method: fqn
+          value: model_314
+        - method: fqn
+          value: model_315
+        - method: fqn
+          value: model_316
+        - method: fqn
+          value: model_317
+        - method: fqn
+          value: model_318
+        - method: fqn
+          value: model_319
+        - method: fqn
+          value: model_320
+        - method: fqn
+          value: model_321
+        - method: fqn
+          value: model_322
+        - method: fqn
+          value: model_323
+        - method: fqn
+          value: model_324
+        - method: fqn
+          value: model_325
+        - method: fqn
+          value: model_326
+        - method: fqn
+          value: model_327
+        - method: fqn
+          value: model_328
+        - method: fqn
+          value: model_329
+        - method: fqn
+          value: model_330
+        - method: fqn
+          value: model_331
+        - method: fqn
+          value: model_332
+        - method: fqn
+          value: model_333
+        - method: fqn
+          value: model_334
+        - method: fqn
+          value: model_335
+        - method: fqn
+          value: model_336
+        - method: fqn
+          value: model_337
+        - method: fqn
+          value: model_338
+        - method: fqn
+          value: model_339
+        - method: fqn
+          value: model_340
+        - method: fqn
+          value: model_341
+        - method: fqn
+          value: model_342
+        - method: fqn
+          value: model_343
+        - method: fqn
+          value: model_344
+        - method: fqn
+          value: model_345
+        - method: fqn
+          value: model_346
+        - method: fqn
+          value: model_347
+        - method: fqn
+          value: model_348
+        - method: fqn
+          value: model_349
+        - method: fqn
+          value: model_350
+        - method: fqn
+          value: model_351
+        - method: fqn
+          value: model_352
+        - method: fqn
+          value: model_353
+        - method: fqn
+          value: model_354
+        - method: fqn
+          value: model_355
+        - method: fqn
+          value: model_356
+        - method: fqn
+          value: model_357
+        - method: fqn
+          value: model_358
+        - method: fqn
+          value: model_359
+        - method: fqn
+          value: model_360
+        - method: fqn
+          value: model_361
+        - method: fqn
+          value: model_362
+        - method: fqn
+          value: model_363
+        - method: fqn
+          value: model_364
+        - method: fqn
+          value: model_365
+        - method: fqn
+          value: model_366
+        - method: fqn
+          value: model_367
+        - method: fqn
+          value: model_368
+        - method: fqn
+          value: model_369
+        - method: fqn
+          value: model_370
+        - method: fqn
+          value: model_371
+        - method: fqn
+          value: model_372
+        - method: fqn
+          value: model_373
+        - method: fqn
+          value: model_374
+        - method: fqn
+          value: model_375
+        - method: fqn
+          value: model_376
+        - method: fqn
+          value: model_377
+        - method: fqn
+          value: model_378
+        - method: fqn
+          value: model_379
+        - method: fqn
+          value: model_380
+        - method: fqn
+          value: model_381
+        - method: fqn
+          value: model_382
+        - method: fqn
+          value: model_383
+        - method: fqn
+          value: model_384
+        - method: fqn
+          value: model_385
+        - method: fqn
+          value: model_386
+        - method: fqn
+          value: model_387
+        - method: fqn
+          value: model_388
+        - method: fqn
+          value: model_389
+        - method: fqn
+          value: model_390
+        - method: fqn
+          value: model_391
+        - method: fqn
+          value: model_392
+        - method: fqn
+          value: model_393
+        - method: fqn
+          value: model_394
+        - method: fqn
+          value: model_395
+        - method: fqn
+          value: model_396
+        - method: fqn
+          value: model_397
+        - method: fqn
+          value: model_398
+        - method: fqn
+          value: model_399
+        - method: fqn
+          value: model_400
+        - method: fqn
+          value: model_401
+        - method: fqn
+          value: model_402
+        - method: fqn
+          value: model_403
+        - method: fqn
+          value: model_404
+        - method: fqn
+          value: model_405
+        - method: fqn
+          value: model_406
+        - method: fqn
+          value: model_407
+        - method: fqn
+          value: model_408
+        - method: fqn
+          value: model_409
+        - method: fqn
+          value: model_410
+        - method: fqn
+          value: model_411
+        - method: fqn
+          value: model_412
+        - method: fqn
+          value: model_413
+        - method: fqn
+          value: model_414
+        - method: fqn
+          value: model_415
+        - method: fqn
+          value: model_416
+        - method: fqn
+          value: model_417
+        - method: fqn
+          value: model_418
+        - method: fqn
+          value: model_419
+        - method: fqn
+          value: model_420
+        - method: fqn
+          value: model_421
+        - method: fqn
+          value: model_422
+        - method: fqn
+          value: model_423
+        - method: fqn
+          value: model_424
+        - method: fqn
+          value: model_425
+        - method: fqn
+          value: model_426
+        - method: fqn
+          value: model_427
+        - method: fqn
+          value: model_428
+        - method: fqn
+          value: model_429
+        - method: fqn
+          value: model_430
+        - method: fqn
+          value: model_431
+        - method: fqn
+          value: model_432
+        - method: fqn
+          value: model_433
+        - method: fqn
+          value: model_434
+        - method: fqn
+          value: model_435
+        - method: fqn
+          value: model_436
+        - method: fqn
+          value: model_437
+        - method: fqn
+          value: model_438
+        - method: fqn
+          value: model_439
+        - method: fqn
+          value: model_440
+        - method: fqn
+          value: model_441
+        - method: fqn
+          value: model_442
+        - method: fqn
+          value: model_443
+        - method: fqn
+          value: model_444
+        - method: fqn
+          value: model_445
+        - method: fqn
+          value: model_446
+        - method: fqn
+          value: model_447
+        - method: fqn
+          value: model_448
+        - method: fqn
+          value: model_449
+        - method: fqn
+          value: model_450
+        - method: fqn
+          value: model_451
+        - method: fqn
+          value: model_452
+        - method: fqn
+          value: model_453
+        - method: fqn
+          value: model_454
+        - method: fqn
+          value: model_455
+        - method: fqn
+          value: model_456
+        - method: fqn
+          value: model_457
+        - method: fqn
+          value: model_458
+        - method: fqn
+          value: model_459
+        - method: fqn
+          value: model_460
+        - method: fqn
+          value: model_461
+        - method: fqn
+          value: model_462
+        - method: fqn
+          value: model_463
+        - method: fqn
+          value: model_464
+        - method: fqn
+          value: model_465
+        - method: fqn
+          value: model_466
+        - method: fqn
+          value: model_467
+        - method: fqn
+          value: model_468
+        - method: fqn
+          value: model_469
+        - method: fqn
+          value: model_470
+        - method: fqn
+          value: model_471
+        - method: fqn
+          value: model_472
+        - method: fqn
+          value: model_473
+        - method: fqn
+          value: model_474
+        - method: fqn
+          value: model_475
+        - method: fqn
+          value: model_476
+        - method: fqn
+          value: model_477
+        - method: fqn
+          value: model_478
+        - method: fqn
+          value: model_479
+        - method: fqn
+          value: model_480
+        - method: fqn
+          value: model_481
+        - method: fqn
+          value: model_482
+        - method: fqn
+          value: model_483
+        - method: fqn
+          value: model_484
+        - method: fqn
+          value: model_485
+        - method: fqn
+          value: model_486
+        - method: fqn
+          value: model_487
+        - method: fqn
+          value: model_488
+        - method: fqn
+          value: model_489
+        - method: fqn
+          value: model_490
+        - method: fqn
+          value: model_491
+        - method: fqn
+          value: model_492
+        - method: fqn
+          value: model_493
+        - method: fqn
+          value: model_494
+        - method: fqn
+          value: model_495
+        - method: fqn
+          value: model_496
+        - method: fqn
+          value: model_497
+        - method: fqn
+          value: model_498
+        - method: fqn
+          value: model_499

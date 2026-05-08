@@ -1,0 +1,7 @@
+{% set dependency0 =  ref('model_111')  %}
+{% set dependency1 =  ref('model_2')  %}
+{% set dependency2 =  ref('model_61')  %}
+{% set dependency3 =  ref('model_24')  %}
+{% set dependency4 =  ref('model_71')  %}
+
+SELECT * from {{ dependency0 }}

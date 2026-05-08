@@ -2,15 +2,14 @@ import random
 
 
 sources = [
-    " source('aayan_test', 'example_table_2') ",
-    " source('aayan_test', 'Aayan_S3_Input') ",
-    " source('aayan_test', 'Aayan_S3_Lots_Of_Small_Files') ",
-    " source('aayan_test', 'Aayan_S3_Even_More_Small_Files') "
+    " source('public', 'public___caius_test') ",
+    " source('public', 'public___comp_test_a') ",
+    " source('public', 'public___department') "
 ]
 
 models = []
 
-for i in range(1, 100):
+for i in range(1, 500):
     upstream = sources + models
     subset_length = random.randint(1, min(len(upstream), 5))
     random_subset = random.sample(upstream, subset_length)

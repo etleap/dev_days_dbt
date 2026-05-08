@@ -1,3 +1,11 @@
 version: 2
-sources: [
-    ]
+sources:
+  - name: aayan_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: public___caius_test
+      - name: public___comp_test_a
+      - name: public___department
