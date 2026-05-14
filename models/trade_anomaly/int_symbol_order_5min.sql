@@ -10,7 +10,6 @@ select
   sum(qty)                                   as shares_submitted_10m,
   sum(filled_qty)                            as shares_filled_10m,
   count_if(status = 'CANCELED')              as cancels_10m,
-  some_non_existent_column as foo,
   sum(
     case when status = 'OPEN' 
       then pnl_usd 
