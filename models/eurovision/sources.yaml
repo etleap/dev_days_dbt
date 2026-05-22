@@ -1,0 +1,5 @@
+sources:
+  - name: SNOWFLAKE_2026_BRONZE
+    database: SNOWFLAKE_2026_CLD
+    tables:
+      - name: test_votes

@@ -24,6 +24,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+flags:
+  enable_iceberg_materializations: true
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -38,3 +40,19 @@ models:
       +tags: trade_anomaly
     sales_summary:
       +materialized: table
+    eurovision:
+      +materialized: table
+      +catalog_name: snowflake_cld
+      +tags: eurovision
+
+catalogs:
+  - name: snowflake_cld
+    active_write_integration: glue_rest_integration
+    write_integrations:
+      - name: glue_rest_integration
+        catalog_type: iceberg_rest
+        external_volume: iceberg_external_volume
+        table_format: iceberg
+        adapter_properties:
+          catalog_linked_database: SNOWFLAKE_2026_CLD
+          catalog_linked_database_type: glue

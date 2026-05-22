@@ -1,0 +1,1 @@
+select * from {{ source('snowflake_2026_bronze', 'test_votes') }}
