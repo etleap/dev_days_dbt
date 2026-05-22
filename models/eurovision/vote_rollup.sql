@@ -14,7 +14,7 @@ with new_votes as (
     countryCode,
     count(voteId) as new_vote_count,
     max(vote_time) as new_last_vote_time
-  from {{ source('snowflake_2026_bronze', 'test_votes') }}
+  from {{ source('snowflake_2026_bronze', 'votes') }}
   where vote_time > (select max(last_vote_time) from {{ this }})
   group by countryCode
 )
@@ -31,8 +31,8 @@ full outer join new_votes on existing.countryCode = new_votes.countryCode
 select
   countryCode,
   count(voteId) as vote_count,
-  max(vote_time) as last_vote_time
-from {{ source('snowflake_2026_bronze', 'test_votes') }}
+  max(vote_time) as "last_vote_time"
+from {{ source('snowflake_2026_bronze', 'votes') }}
 group by countryCode
 
 {% endif %}
