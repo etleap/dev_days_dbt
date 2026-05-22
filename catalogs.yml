@@ -7,5 +7,5 @@ catalogs:
         external_volume: iceberg_external_volume
         table_format: iceberg
         adapter_properties:
-          catalog_linked_database: SNOWFLAKE_2026_CLD
+          catalog_linked_database: snowflake_2026_cld
           catalog_linked_database_type: glue
