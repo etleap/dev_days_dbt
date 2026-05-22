@@ -1,5 +1,5 @@
 sources:
-  - name: SNOWFLAKE_2026_BRONZE
-    database: SNOWFLAKE_2026_CLD
+  - name: snowflake_2026_bronze
+    database: snowflake_2026_cld
     tables:
       - name: test_votes
