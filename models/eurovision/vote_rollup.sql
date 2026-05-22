@@ -22,7 +22,7 @@ with new_votes as (
 select
   coalesce(existing.countryCode, new_votes.countryCode) as countryCode,
   coalesce(existing.vote_count, 0) + coalesce(new_votes.new_vote_count, 0) as vote_count,
-  greatest(existing.last_vote_time, new_votes.new_last_vote_time) as last_vote_time
+  coalesce(greatest(existing.last_vote_time, new_votes.new_last_vote_time), existing.last_vote_time, new_votes.new_last_vote_time) as last_vote_time
 from {{ this }} existing
 full outer join new_votes on existing.countryCode = new_votes.countryCode
 
