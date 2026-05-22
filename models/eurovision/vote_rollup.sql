@@ -1,1 +1,1 @@
-select * from {{ source('snowflake_2026_bronze', 'votes') }}
+select * from {{ source('snowflake_2026_bronze', 'VOTES') }}
