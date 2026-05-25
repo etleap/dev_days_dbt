@@ -3,7 +3,8 @@
     materialized='incremental',
     unique_key='countryCode',
     incremental_strategy='merge',
-    catalog_name='snowflake_cld'
+    catalog_name='snowflake_cld',
+    schema='snowflake_2026_silver'
   )
 }}
 

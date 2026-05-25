@@ -39,10 +39,10 @@ models:
       +tags: trade_anomaly
     sales_summary:
       +materialized: table
-    eurovision:
+    world_cup:
       +materialized: table
       +catalog_name: snowflake_cld
-      +tags: eurovision
+      +tags: world_cup
 
 quoting:
   database: false

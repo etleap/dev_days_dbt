@@ -1,5 +1,0 @@
-sources:
-  - name: BRONZE
-    database: SNOWFLAKE_2026
-    tables:
-      - name: VOTES_SNOWFLAKE
