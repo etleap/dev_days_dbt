@@ -1,6 +1,7 @@
 {{ config(
     schema='snowflake_2026_silver',
-    catalog_name='snowflake_cld'
+    catalog_name='snowflake_cld',
+    materialized='table'
 ) }}
 
 WITH participants AS (
@@ -26,7 +27,7 @@ wc_ranked AS (
             ELSE 0
         END                                  AS rank
     FROM {{ "BRONZE.\"WC_APPEARANCE_Rp02gYBz\"" }} wa
-    WHERE wa.country_code IN (SELECT country_code FROM participants)
+    INNER JOIN participants p2 ON wa.country_code = p2.country_code
 ),
 
 olympics_ranked AS (
@@ -42,8 +43,8 @@ olympics_ranked AS (
             ELSE 1
         END                                  AS rank
     FROM {{ "BRONZE.\"OLYMPICS_FOOTBALL_1cCSrWMO\"" }} olym
+    INNER JOIN participants p3 ON olym.country_code = p3.country_code
     WHERE olym.gender = 'M'
-      AND olym.country_code IN (SELECT country_code FROM participants)
 ),
 
 all_achievements AS (
