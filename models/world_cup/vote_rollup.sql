@@ -33,7 +33,7 @@ select
   countryCode,
   count(voteId) as vote_count,
   max(voteTime) as "last_vote_time"
-from {{ "SNOWFLAKE_2026.BRONZE.VOTES_SNOWFLAKE_oNDmkhg1" }}
+from {{ "SNOWFLAKE_2026.BRONZE.\"VOTES_SNOWFLAKE_oNDmkhg1\"" }}
 group by countryCode
 
 {% endif %}
