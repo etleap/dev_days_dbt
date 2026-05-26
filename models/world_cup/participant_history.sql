@@ -1,6 +1,5 @@
 {{ config(
     schema='snowflake_2026_silver',
-    catalog_name='snowflake_cld',
     materialized='table'
 ) }}
 
