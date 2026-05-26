@@ -41,6 +41,7 @@ models:
       +materialized: table
     world_cup:
       +materialized: table
+      +catalog_name: snowflake_cld
       +tags: world_cup
 
 quoting:
