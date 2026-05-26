@@ -31,7 +31,7 @@ wc_ranked AS (
             WHEN 'Group'     THEN 1
             ELSE 0
         END                                  AS rank
-    FROM {{ "BRONZE.\"WC_APPEARANCE_Rp02gYBz\"" }} wa
+    FROM {{ "SNOWFLAKE_2026.BRONZE.\"WC_APPEARANCE_Rp02gYBz\"" }} wa
     INNER JOIN participants p2 ON wa.country_code = p2.country_code
 ),
 
