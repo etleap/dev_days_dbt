@@ -15,7 +15,7 @@ with new_votes as (
     countryCode,
     count(voteId) as new_vote_count,
     max(voteTime) as new_last_vote_time
-  from {{ source('BRONZE', 'VOTES_SNOWFLAKE') }}
+  from {{ "SNOWFLAKE_2026.BRONZE.\"VOTES_SNOWFLAKE_oNDmkhg1\"" }}
   where voteTime > (select max(last_vote_time) from {{ this }})
   group by countryCode
 )
@@ -33,7 +33,7 @@ select
   countryCode,
   count(voteId) as vote_count,
   max(voteTime) as "last_vote_time"
-from {{ source('BRONZE', 'VOTES_SNOWFLAKE') }}
+from {{ "SNOWFLAKE_2026.BRONZE.VOTES_SNOWFLAKE_oNDmkhg1" }}
 group by countryCode
 
 {% endif %}

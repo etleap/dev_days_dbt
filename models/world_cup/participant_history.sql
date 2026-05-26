@@ -5,8 +5,8 @@
 
 WITH participants AS (
     SELECT p.country_code, c.name, c.flag_emoji, c.region
-    FROM {{ source('BRONZE', 'WC_2026_PARTICIPANT') }} p
-    JOIN {{ source('BRONZE', 'COUNTRY') }} c ON p.country_code = c.code
+    FROM {{ "BRONZE.\"WC_2026_PARTICIPANT_bL5XlQ1z\"" }} p
+    JOIN {{ "BRONZE.\"COUNTRY_vFKoJ7u5\"" }} c ON p.country_code = c.code
 ),
 
 wc_ranked AS (
@@ -25,7 +25,7 @@ wc_ranked AS (
             WHEN 'Group'     THEN 1
             ELSE 0
         END                                  AS rank
-    FROM {{ source('BRONZE', 'WC_APPEARANCE') }} wa
+    FROM {{ "BRONZE.\"WC_APPEARANCE_Rp02gYBz\"" }} wa
     WHERE wa.country_code IN (SELECT country_code FROM participants)
 ),
 
@@ -41,7 +41,7 @@ olympics_ranked AS (
             WHEN 'Bronze' THEN 5
             ELSE 1
         END                                  AS rank
-    FROM {{ source('BRONZE', 'OLYMPICS_FOOTBALL') }} olym
+    FROM {{ "BRONZE.\"OLYMPICS_FOOTBALL_1cCSrWMO\"" }} olym
     WHERE olym.gender = 'M'
       AND olym.country_code IN (SELECT country_code FROM participants)
 ),
