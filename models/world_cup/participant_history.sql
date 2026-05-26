@@ -4,6 +4,11 @@
     materialized='table'
 ) }}
 
+-- depends_on: {{ source('BRONZE', 'WC_2026_PARTICIPANT') }}
+-- depends_on: {{ source('BRONZE', 'COUNTRY') }}
+-- depends_on: {{ source('BRONZE', 'WC_APPEARANCE') }}
+-- depends_on: {{ source('BRONZE', 'OLYMPICS_FOOTBALL') }}
+
 WITH participants AS (
     SELECT p.country_code, c.name, c.flag_emoji, c.region
     FROM {{ "BRONZE.\"WC_2026_PARTICIPANT_bL5XlQ1z\"" }} p

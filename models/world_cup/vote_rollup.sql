@@ -6,6 +6,8 @@
   )
 }}
 
+-- depends_on: {{ source('BRONZE', 'VOTES_SNOWFLAKE') }}
+
 select
   countryCode,
   count(voteId) as vote_count,
