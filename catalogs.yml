@@ -1,0 +1,11 @@
+catalogs:
+  - name: snowflake_cld
+    active_write_integration: glue_rest_integration
+    write_integrations:
+      - name: glue_rest_integration
+        catalog_type: iceberg_rest
+        external_volume: iceberg_external_volume
+        table_format: iceberg
+        adapter_properties:
+          catalog_linked_database: snowflake_2026_cld
+          catalog_linked_database_type: glue
