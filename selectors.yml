@@ -10,6 +10,6 @@ selectors:
         - exclude:
             - method: tag
               value: trade_anomaly
-  - name: eurovision
+  - name: world_cup
     definition:
-      tag: eurovision
+      tag: world_cup

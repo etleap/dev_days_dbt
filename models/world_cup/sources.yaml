@@ -1,0 +1,9 @@
+sources:
+  - name: BRONZE
+    database: SNOWFLAKE_2026
+    tables:
+      - name: VOTES_SNOWFLAKE
+      - name: COUNTRY
+      - name: WC_APPEARANCE
+      - name: OLYMPICS_FOOTBALL
+      - name: WC_2026_PARTICIPANT
