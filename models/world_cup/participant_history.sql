@@ -11,8 +11,8 @@
 
 WITH participants AS (
     SELECT p.country_code, c.name, c.flag_emoji, c.region
-    FROM {{ "SNOWFLAKE_2026.BRONZE.\"WC_2026_PARTICIPANT_bL5XlQ1z\"" }} p
-    JOIN {{ "SNOWFLAKE_2026.BRONZE.\"COUNTRY_vFKoJ7u5\"" }} c ON p.country_code = c.code
+    FROM {{ "SNOWFLAKE_2026.BRONZE.\"WC_2026_PARTICIPANT_PROD_bL5XlQ1z\"" }} p
+    JOIN {{ "SNOWFLAKE_2026.BRONZE.\"COUNTRY_PROD_vFKoJ7u5\"" }} c ON p.country_code = c.code
 ),
 
 wc_ranked AS (
@@ -31,7 +31,7 @@ wc_ranked AS (
             WHEN 'Group'     THEN 1
             ELSE 0
         END                                  AS rank
-    FROM {{ "SNOWFLAKE_2026.BRONZE.\"WC_APPEARANCE_Rp02gYBz\"" }} wa
+    FROM {{ "SNOWFLAKE_2026.BRONZE.\"WC_APPEARANCE_PROD_Rp02gYBz\"" }} wa
     INNER JOIN participants p2 ON wa.country_code = p2.country_code
 ),
 
@@ -47,7 +47,7 @@ olympics_ranked AS (
             WHEN 'Bronze' THEN 5
             ELSE 1
         END                                  AS rank
-    FROM {{ "SNOWFLAKE_2026.BRONZE.\"OLYMPICS_FOOTBALL_1cCSrWMO\"" }} olym
+    FROM {{ "SNOWFLAKE_2026.BRONZE.\"OLYMPICS_FOOTBALL_PROD_1cCSrWMO\"" }} olym
     INNER JOIN participants p3 ON olym.country_code = p3.country_code
     WHERE olym.gender = 'M'
 ),
