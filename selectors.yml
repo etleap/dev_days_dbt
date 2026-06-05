@@ -10,6 +10,3 @@ selectors:
         - exclude:
             - method: tag
               value: trade_anomaly
-  - name: eurovision
-    definition:
-      tag: eurovision
