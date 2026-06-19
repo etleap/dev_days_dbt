@@ -1,27 +1,31 @@
 version: 2
 sources:
-  - name: CAIUS_DEV
-    database: SNOWFLAKE_2025
+  - name: CDC_DEMO
+    database: PC_ETLEAP_DB
     quoting:
         schema: true
         identifier: true
     tables:
+      - name: ITEM
+      - name: LINE_ITEM
+      - name: PURCHASE
+      - name: USER_INFO
+  - name: DBTDEMO
+    database: PC_ETLEAP_DB
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: ITEM
+      - name: LINE_ITEM
+      - name: PURCHASE
+      - name: USER_INFO
       - name: WEB_EVENTS
-  - name: DEV
-    database: SNOWFLAKE_2025
+  - name: DEMO
+    database: PC_ETLEAP_DB
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: WEB_EVENTS
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TICKETS
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+      - name: FAVORITE_BOOKS
+      - name: USER_DATA
