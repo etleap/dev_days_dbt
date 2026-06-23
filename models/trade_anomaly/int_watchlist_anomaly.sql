@@ -1,6 +1,6 @@
 {{ config(
     pre_hook=[
-        "alter iceberg table public.\"TRADE_ANOMALY_rCnLfXHS\" refresh;"
+
     ]
 ) }}
 
