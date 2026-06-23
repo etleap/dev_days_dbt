@@ -24,6 +24,15 @@ sources:
       - name: SALESFORCE_ACCOUNT
       - name: TRADE_ANOMALY
       - name: WATCHLIST
+  - name: public
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: orders
+      - name: salesforce_account
+      - name: watchlist
   - name: PUBLIC
     database: SNOWFLAKE_2025
     quoting:

@@ -16,5 +16,5 @@ select
       else 0 
     end) as pnl_risk_usd,
   max(updated_at)                            as last_update
-from {{ source('PUBLIC', 'ORDERS') }}
+from {{ source('public', 'orders') }}
 group by account_id, symbol

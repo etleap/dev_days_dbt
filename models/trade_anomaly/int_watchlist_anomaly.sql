@@ -13,8 +13,8 @@ select
   anomaly.created_date as anomaly_create_date,
   watchlist.watchlist_date,
   watchlist.watch_reason
-from {{ source('PUBLIC', 'TRADE_ANOMALY') }} anomaly
+from {{ source('public', 'trade_anomaly') }} anomaly
 join {{ source('PUBLIC', 'TICKETS') }} account
   on anomaly.account__c = account.id
-join {{ source('PUBLIC', 'WATCHLIST') }} watchlist
+join {{ source('public', 'watchlist') }} watchlist
   on watchlist.entity_name = account.name
