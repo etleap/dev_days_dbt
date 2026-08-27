@@ -1,22 +1,29 @@
 version: 2
 sources:
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: iceberg_dev
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+#  - name: CAIUS_DEV
+#    database: SNOWFLAKE_2025
+#    quoting:
+#        schema: true
+#        identifier: true
+#    tables:
+#      - name: WEB_EVENTS
+#  - name: DEV
+#    database: SNOWFLAKE_2025
+#    quoting:
+#        schema: true
+#        identifier: true
+#    tables:
+#      - name: WEB_EVENTS
+#  - name: iceberg_dev
+#    database: SNOWFLAKE_2025
+#    quoting:
+#        schema: true
+#        identifier: true
+#    tables:
+#      - name: ORDERS
+#      - name: SALESFORCE_ACCOUNT
+#      - name: TRADE_ANOMALY
+#      - name: WATCHLIST
   - name: public
     database: SNOWFLAKE_2026_CLD
     quoting:
@@ -27,22 +34,22 @@ sources:
       - name: salesforce_account
       - name: trade_anomaly
       - name: watchlist
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: TICKETS
-  - name: snowflake_2026_bronze
-    database: SNOWFLAKE_2026
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: COUNTRY_PROD
-      - name: COUNTRY_REAL
-      - name: OLYMPICS_FOOTBALL_PROD
-      - name: VOTES_SNOWFLAKE_PROD
-      - name: WC_2026_PARTICIPANT_PROD
-      - name: WC_APPEARANCE_PROD
+#  - name: PUBLIC
+#    database: SNOWFLAKE_2025
+#    quoting:
+#        schema: true
+#        identifier: true
+#    tables:
+#      - name: TICKETS
+#  - name: snowflake_2026_bronze
+#    database: SNOWFLAKE_2026
+#    quoting:
+#        schema: true
+#        identifier: true
+#    tables:
+#      - name: COUNTRY_PROD
+#      - name: COUNTRY_REAL
+#      - name: OLYMPICS_FOOTBALL_PROD
+#      - name: VOTES_SNOWFLAKE_PROD
+#      - name: WC_2026_PARTICIPANT_PROD
+#      - name: WC_APPEARANCE_PROD
