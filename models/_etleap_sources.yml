@@ -1,48 +1,175 @@
 version: 2
 sources:
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: iceberg_dev
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
-  - name: public
+  - name: archie_test
     database: SNOWFLAKE_2026_CLD
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: orders
-      - name: salesforce_account
-      - name: trade_anomaly
-      - name: watchlist
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
+      - name: report__age_range_view
+      - name: sftp_iceberg_many_files_test
+      - name: sftp_many_files_test
+  - name: CDC_DEMO
+    database: PC_ETLEAP_DB
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: TICKETS
-  - name: snowflake_2026_bronze
-    database: SNOWFLAKE_2026
+      - name: ITEM
+      - name: LINE_ITEM
+      - name: PURCHASE
+      - name: USER_INFO
+  - name: daniel_etleap_test
+    database: SNOWFLAKE_2026_CLD
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: COUNTRY_PROD
-      - name: COUNTRY_REAL
-      - name: OLYMPICS_FOOTBALL_PROD
-      - name: VOTES_SNOWFLAKE_PROD
-      - name: WC_2026_PARTICIPANT_PROD
-      - name: WC_APPEARANCE_PROD
+      - name: crm_activities_fix_6
+      - name: increase_prod_account_numbers
+      - name: increase_prod_accounts
+      - name: increase_prod_ach_transfers
+      - name: increase_prod_card_disputes
+      - name: increase_prod_card_payments
+      - name: increase_prod_cards
+      - name: increase_prod_check_transfers
+      - name: increase_prod_declined_transactions
+      - name: increase_prod_entities
+      - name: increase_prod_events
+      - name: increase_prod_external_accounts
+      - name: increase_prod_inbound_ach_transfers
+      - name: increase_prod_pending_transactions
+      - name: increase_prod_real_time_payments_transfers
+      - name: increase_prod_transactions
+      - name: increase_prod_wire_transfers
+      - name: insights_by_ad_prod_val
+      - name: tasks_fix_6
+      - name: ticket_audits_validation
+      - name: ticket_comments_validation
+      - name: zendesk_ticket_audits_validation
+  - name: dbt_test
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: Ticket_Forms
+      - name: tickets_vanilla
+  - name: DBTDEMO
+    database: PC_ETLEAP_DB
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: ITEM
+      - name: LINE_ITEM
+      - name: PURCHASE
+      - name: USER_INFO
+      - name: WEB_EVENTS
+  - name: DEMO
+    database: PC_ETLEAP_DB
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: USER_DATA
+  - name: iceberg_dev
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: append_with_change_test
+      - name: demo_page_product_order
+      - name: dispute_prod
+      - name: DisputeStatusHistory
+      - name: employees_non_cld_prod
+      - name: etleap_daniel_validation_json_format
+      - name: exhaustions_false_positive_test
+      - name: FAVORITE_BOOKS
+      - name: global_support_view
+      - name: high_throughput_deletes_test
+      - name: luqman_archie_table
+      - name: luqman_operation_full_test
+      - name: person_type_1_warehouse
+      - name: REFRESH_WAREHOUSE_TEST
+      - name: s3_org_cluster_prod
+  - name: luqman_test
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: row_error_demo_test
+      - name: row_error_influx_prod
+  - name: paulo_test
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: adgasaqatest
+      - name: calendar_events312312321
+      - name: crm_users3213123
+      - name: Organizations4311239976
+      - name: report__ad_groupgasaqatest
+      - name: report__age_range_viewprodtesticeberg2906
+      - name: sla_policiesrwerewrew423432
+      - name: slft_testconversations
+      - name: slft_testtranscription_sentences
+      - name: slft_testtranscriptions
+      - name: spftesticbabandoned_checkouts
+      - name: spftesticbabandoned_checkouts_line_items
+      - name: spftesticbcomments
+      - name: spftesticbevents
+      - name: spftiyeststorders
+      - name: spftiyeststorders_line_items
+      - name: stripeupdate0506219aaccounts
+      - name: stripeupdate0506219aissuing__authorizations
+      - name: stripeupdate0506219aissuing__cards
+      - name: stripeupdate0506219aissuing__transactions
+      - name: Ticket_Commentstestprodstream
+      - name: Ticket_Metricst434334343
+      - name: Tickets423423423234
+      - name: ticketsrefskererprodrefresh
+      - name: User43243241186
+      - name: z2lvvvvvfdd3is_11_vaitm_1_srv_0001
+      - name: zperf_test_cds2_143223123123_srv_0001
+  - name: sagar_dev
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: flink_promote_to_header
+      - name: sftp_org_cluster_prod
+  - name: SAGAR_TEST
+    database: PC_ETLEAP_DB
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: PK_UPDATE_TEST
+  - name: shannon_test
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: employees_prod_cld
+      - name: fetch_lobs_lob_default_kafka
+      - name: fetch_lobs_lob_full_kafka
+      - name: lob_full_kafka
+      - name: orders_prod_17_9
+      - name: orders_prod_8_9
+      - name: orders_prod_test_11_9
+      - name: orders_prod_v2_17_9
+      - name: person_prod_testing_rename_switch_column_names
+  - name: yijun_test
+    database: SNOWFLAKE_2026_CLD
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: annumbers_main_org
+      - name: annumbers_main_org_backup
